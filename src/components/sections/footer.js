@@ -3,40 +3,101 @@ import styled from "styled-components"
 
 import { Container } from "../global"
 
+import GPlay from "../../images/gplay.png"
+import AStore from "../../images/appstore.png"
+
 const Footer = () => (
   <FooterWrapper id="footer">
     <FooterColumnContainer>
       <FooterColumn>
         <span>Features</span>
         <ul>
-          <li>Automation</li>
-          <li>Rewards</li>
+          <li>
+            <a href="#">
+              <ImageStore src={GPlay} alt="PlayStore"></ImageStore>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <ImageStore src={AStore} alt="Apple Store"></ImageStore>
+            </a>
+          </li>
         </ul>
       </FooterColumn>
       <FooterColumn>
-        <span>Resources</span>
+        <span>Réseaux</span>
         <ul>
-          <li>Compare</li>
-          <li>Blog</li>
+          <li>
+            <a href="http://medium.com/@klarkbank" className="footer-links">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/klarkbank/"
+              className="footer-links"
+            >
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/klarkbank" className="footer-links">
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/klarkbank/"
+              className="footer-links"
+            >
+              Linkedin
+            </a>
+          </li>
         </ul>
       </FooterColumn>
       <FooterColumn>
-        <span>Company</span>
+        <span>Support</span>
         <ul>
-          <li>About Us</li>
-          <li>Careers</li>
+          <li>
+            <a href="mailto:press@klark.app" className="footer-links">
+              Presse
+            </a>
+          </li>
+          <li>
+            <a href="mailto:hello@klark.app" className="footer-links">
+              Assistance
+            </a>
+          </li>
         </ul>
       </FooterColumn>
       <FooterColumn>
-        <span>Social</span>
+        <span>La banque</span>
         <ul>
-          <li>LinkedIn</li>
-          <li>Instagram</li>
+          <li>
+            <a href="#top" className="footer-links">
+              La Banque
+            </a>
+          </li>
+          <li>
+            <a href="#" className="footer-links">
+              Confidentialité
+            </a>
+          </li>
+          <li>
+            <a href="#" className="footer-links">
+              Mentions Légales
+            </a>
+          </li>
+          <li>
+            <a href="#" className="footer-links">
+              Nos CGU
+            </a>
+          </li>
         </ul>
       </FooterColumn>
     </FooterColumnContainer>
     <BrandContainer>
-      <Logo>Finance</Logo>
+      <Logo>Klark</Logo>
     </BrandContainer>
   </FooterWrapper>
 )
@@ -47,10 +108,14 @@ const FooterWrapper = styled.footer`
   padding: 0 0 80px;
 `
 
+const ImageStore = styled.img`
+  width: 150px;
+`
+
 const Logo = styled.div`
-  font-family: ${props => props.theme.font.extrabold};
-  ${props => props.theme.font_size.regular};
-  color: ${props => props.theme.color.black.regular};
+  font-family: ${(props) => props.theme.font.extrabold};
+  ${(props) => props.theme.font_size.regular};
+  color: ${(props) => props.theme.color.black.regular};
   text-decoration: none;
   letter-spacing: 1px;
   margin: 0;
@@ -69,7 +134,7 @@ const BrandContainer = styled(Container)`
   display: flex;
   align-items: flex-end;
 
-  @media (max-width: ${props => props.theme.screen.sm}) {
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
   }
 `
 const FooterColumnContainer = styled(Container)`
@@ -77,7 +142,7 @@ const FooterColumnContainer = styled(Container)`
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 32px;
   justify-content: start;
-  @media (max-width: ${props => props.theme.screen.sm}) {
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
     grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
   }
@@ -85,17 +150,17 @@ const FooterColumnContainer = styled(Container)`
 const FooterColumn = styled.div`
   span {
     font-size: 16px;
-    font-family: ${props => props.theme.font.bold};
-    color: ${props => props.theme.color.primary};
+    font-family: ${(props) => props.theme.font.bold};
+    color: ${(props) => props.theme.color.primary};
   }
   ul {
     list-style: none;
     margin: 16px 0;
     padding: 0;
-    color: ${props => props.theme.color.black.regular};
+    color: ${(props) => props.theme.color.black.regular};
     li {
       margin-bottom: 12px;
-      font-family: ${props => props.theme.font.normal};
+      font-family: ${(props) => props.theme.font.normal};
       font-size: 15px;
     }
   }

@@ -9,69 +9,69 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     ${"" /* change this if implementing light/dark mode functionality */}
-    color: ${props => props.theme.color.primary};
+    color: ${(props) => props.theme.color.primary};
 
   }
   
   body {
-    font-family: ${props => props.theme.font.primary};
+    font-family: ${(props) => props.theme.font.primary};
   }
 
   
   h1 {
-    ${props => props.theme.font_size.xlarge};
-    font-family: ${props => props.theme.font.bold};
+    ${(props) => props.theme.font_size.xlarge};
+    font-family: ${(props) => props.theme.font.bold};
     
   }
 
   h2 {
-    ${props => props.theme.font_size.larger};
+    ${(props) => props.theme.font_size.larger};
   }
 
   h3 {
-    ${props => props.theme.font_size.larger};
-    font-family: ${props => props.theme.font.bold};
+    ${(props) => props.theme.font_size.larger};
+    font-family: ${(props) => props.theme.font.bold};
   }
 
   h4 {
-    ${props => props.theme.font_size.large};
-    font-family: ${props => props.theme.font.bold};
+    ${(props) => props.theme.font_size.large};
+    font-family: ${(props) => props.theme.font.bold};
   }
 
   h5 {
-    ${props => props.theme.font_size.xsmall};
-    font-family: ${props => props.theme.font.normal};
+    ${(props) => props.theme.font_size.xsmall};
+    font-family: ${(props) => props.theme.font.normal};
   }
 
   p {
-    ${props => props.theme.font_size.small};
+    ${(props) => props.theme.font_size.small};
     line-height: 22px;
 
   }
 
   input {
-    font-family: ${props => props.theme.font.normal};
+    font-family: ${(props) => props.theme.font.normal};
   }
 
-  @media (max-width: ${props => props.theme.screen.sm}) {
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
     h1 {
-      ${props => props.theme.font_size.larger};
+      ${(props) => props.theme.font_size.larger};
     }
 
     h2 {
-      ${props => props.theme.font_size.large};
+      ${(props) => props.theme.font_size.large};
     }
 
     h3 {
-      ${props => props.theme.font_size.regular};
+      ${(props) => props.theme.font_size.regular};
     }
 
     p {
-      ${props => props.theme.font_size.small};
+      ${(props) => props.theme.font_size.small};
     }
   }
 
-  @media (max-width: ${props => props.theme.screen.xs}) {
+  @media (max-width: ${(props) => props.theme.screen.xs}) {
 
     h1 {
 
@@ -107,6 +107,107 @@ const GlobalStyles = createGlobalStyle`
   a {
     cursor: pointer;
   }
+
+  .emoji{
+    height:40px;
+  }
+
+  .custom-card {
+    box-shadow: 5px 8px 24px 5px rgba(208, 216, 243, 0.25);
+    border-radius: 10px;
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-bottom: 5%;
+    height: 910px;
+  }
+
+  .per-month{
+    font-size: 16px;
+    color: grey;
+    font-family: 'HK Grotesk Normal';
+    vertical-align: super;
+  }
+
+  .emojiPricingX {
+    margin-top: 10px;
+    -webkit-animation: MoveUpDown 1s infinite  alternate;
+    animation: MoveUpDown 1s infinite  alternate;
+  
+  }
+
+  .headerImg {
+    margin-top: 10px;
+    -webkit-animation: MoveUpDown 1s infinite  alternate;
+    animation: MoveUpDown 1s infinite alternate;
+    z-index: 99;
+  }
+
+  @keyframes MoveUpDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+
+
+  @-webkit-@keyframes MoveUpDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  } 
+
+  .disabled-feature{
+    color: #b1bacc;
+    text-decoration: line-through;
+  }
+
+  .footer-links{
+    color: black;
+    transition: 0.2s ease-in-out;
+  }
+
+  .footer-links:hover{
+    color: #0055FF;
+  }
+
+  .dashboard {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+    width: 46%;
+    height: 700px;
+    border-radius: 25px;
+  }
+
+  .resizeImg{
+      opacity: 0.5;
+    }
+
+  @media (max-width: ${(props) => props.theme.screen.md}) {
+    .dashboard {
+      position: absolute;
+      top: 55%;
+      z-index: 1;
+      overflow: hidden;
+      width: 100%;
+      height: 630px;
+      border-radius: 25px;
+    }
+    .resizeImg{
+      width:100%;
+      opacity: 0.3;
+    }
+  }
+
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
+    .dashboard {
+      display: none;
+    }
+  }
+
+  
 
 `
 

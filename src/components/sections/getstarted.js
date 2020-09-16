@@ -1,14 +1,19 @@
-import React from "react"
+import React, { useRef } from "react"
 import styled from "styled-components"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 import { Container, Section } from "../global"
 
+// const scrollTo = () => window.scrollTo(0, 0)
+
 const GetStarted = () => (
-  <StyledSection>
+  <StyledSection id="klark">
     <GetStartedContainer>
-      <GetStartedTitle>Be the first to get the beta</GetStartedTitle>
-      <TryItButton>Get early access</TryItButton>
-      <Subtitle>No credit card required.</Subtitle>
+      <GetStartedTitle>Testez Klark gratuitement</GetStartedTitle>
+      <AnchorLink href="#top">
+        <TryItButton>Ouvrir un compte</TryItButton>
+      </AnchorLink>
+      <Subtitle>Ouverture des comptes prochainement.</Subtitle>
     </GetStartedContainer>
   </StyledSection>
 )
@@ -16,8 +21,9 @@ const GetStarted = () => (
 export default GetStarted
 
 const StyledSection = styled(Section)`
-  background-color: ${props => props.theme.color.background.light};
-  clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
+  background-color: ${(props) => props.theme.color.background.light};
+  clip-path: polygon(0 0, 100% 14%, 100% 100%, 0 calc(100% - 5vw));
+  padding-bottom: 10%;
 `
 
 const GetStartedContainer = styled(Container)`
@@ -44,7 +50,7 @@ const TryItButton = styled.button`
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
-  background: ${props => props.theme.color.secondary};
+  background: ${(props) => props.theme.color.secondary};
   border-radius: 4px;
   padding: 0px 40px;
   border-width: 0px;
@@ -55,16 +61,16 @@ const TryItButton = styled.button`
   &:hover {
     box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
   }
-  @media (max-width: ${props => props.theme.screen.md}) {
+  @media (max-width: ${(props) => props.theme.screen.md}) {
   }
-  @media (max-width: ${props => props.theme.screen.sm}) {
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
     margin-left: 0;
   }
 `
 
 const Subtitle = styled.span`
-  ${props => props.theme.font_size.xxsmall}
+  ${(props) => props.theme.font_size.xxsmall}
   padding-top: 16px;
   font-size: 14px;
-  color: ${props => props.theme.color.primary};
+  color: ${(props) => props.theme.color.primary};
 `

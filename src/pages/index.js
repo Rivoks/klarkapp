@@ -8,14 +8,18 @@ import Header from "../components/sections/header"
 import Features from "../components/sections/features"
 import Footer from "../components/sections/footer"
 import GetStarted from "../components/sections/getstarted"
+import Entreprise from "../components/sections/entreprise"
+import Faq from "../components/sections/faq"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO />
     <Navigation />
     <Header />
     <Features />
     <GetStarted />
+    <Entreprise />
+    <Faq />
     <Footer />
   </Layout>
 )

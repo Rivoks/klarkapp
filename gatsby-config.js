@@ -4,13 +4,14 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter SaaS Marketing`,
-    description: `A simple one page marketing starter for saas companies.`,
-    author: `Keegan Burkett`,
+    title: `Klark`,
+    description: `La néobanque du futur`,
+    author: `Yazid Bouhria`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    "gatsby-plugin-antd",
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

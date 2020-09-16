@@ -3,45 +3,72 @@ import styled from "styled-components"
 
 import { Section, Container } from "../global"
 
+import "../../styles/GlobalStyles.js"
+
+import bankEmoji from "../../images/bank-emoji.png"
+import cardEmoji from "../../images/card-emoji.png"
+import factoryEmoji from "../../images/factory-emoji.png"
+import notepadEmoji from "../../images/notepad-emoji.png"
+import messageEmoji from "../../images/message-emoji.png"
+
 const Features = () => (
-  <Section id="features">
+  <Section id="fonctionnalités">
     <StyledContainer>
-      <Subtitle>Features</Subtitle>
-      <SectionTitle>Smart money management</SectionTitle>
+      <Subtitle>Fonctionnalités</Subtitle>
+      <SectionTitle>Voici Klark.</SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
-          <FeatureTitle>Notifications</FeatureTitle>
+          <FeatureTitle>
+            <img src={bankEmoji} alt="" className="emoji" />
+          </FeatureTitle>
+          <FeatureTitle>Compte Pro</FeatureTitle>
           <FeatureText>
-            Receive budget and spending alerts based on your favorite triggers.
+            Un compte pour les profesionnels, tout simplement.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Security</FeatureTitle>
+          <FeatureTitle>
+            <img src={cardEmoji} alt="" className="emoji" />
+          </FeatureTitle>
+          <FeatureTitle>MasterCard Business</FeatureTitle>
           <FeatureText>
-            Your data is always safe with us as we use the latest security
-            protocols.
+            Une carte professionnelle pour votre entreprise.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Automation</FeatureTitle>
+          <FeatureTitle>
+            <img src={factoryEmoji} alt="" className="emoji" />
+          </FeatureTitle>
+          <FeatureTitle>Création d'entreprise</FeatureTitle>
           <FeatureText>
-            Create smart automated workflows and triggers for your money.
+            Une carte professionnelle pour votre entreprise.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Aggregation</FeatureTitle>
+          <FeatureTitle>
+            <img src={notepadEmoji} alt="" className="emoji" />
+          </FeatureTitle>
+          <FeatureTitle>Attestation de Dépôt</FeatureTitle>
           <FeatureText>
-            Easily link up to 5 banks to your finance account.
+            Votre attestation de dépôt en moins de 24 heures.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Payments</FeatureTitle>
-          <FeatureText>Send money to friends and family with ease.</FeatureText>
+          <FeatureTitle>
+            <img src={messageEmoji} alt="" className="emoji" />
+          </FeatureTitle>
+          <FeatureTitle>Assisstance 7j/7</FeatureTitle>
+          <FeatureText>
+            Une équipe pour vous accompagner dans vos projets.
+          </FeatureText>
         </FeatureItem>
         <FeatureItem>
-          <FeatureTitle>Rewards</FeatureTitle>
+          <FeatureTitle>
+            <img src={messageEmoji} alt="" className="emoji" />
+          </FeatureTitle>
+          <FeatureTitle>Assisstance 7j/7</FeatureTitle>
           <FeatureText>
-            High interest and rewards for hitting your goals.
+            Une équipe pour vous accompagner dans vos projets.
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>
@@ -54,7 +81,7 @@ export default Features
 const StyledContainer = styled(Container)``
 
 const SectionTitle = styled.h3`
-  color: ${props => props.theme.color.primary};
+  color: ${(props) => props.theme.color.primary};
   display: flex;
   justify-content: center;
   margin: 0 auto 40px;
@@ -63,7 +90,7 @@ const SectionTitle = styled.h3`
 
 const Subtitle = styled.h5`
   font-size: 16px;
-  color: ${props => props.theme.color.accent};
+  color: ${(props) => props.theme.color.accent};
   letter-spacing: 0px;
   margin-bottom: 12px;
   text-align: center;
@@ -76,7 +103,7 @@ const FeaturesGrid = styled.div`
   margin: 0px auto;
   grid-column-gap: 40px;
   grid-row-gap: 35px;
-  @media (max-width: ${props => props.theme.screen.sm}) {
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
     grid-template-columns: 1fr;
     padding: 0 64px;
   }
@@ -90,7 +117,7 @@ const FeatureItem = styled.div`
 `
 
 const FeatureTitle = styled.h4`
-  color: ${props => props.theme.color.primary};
+  color: ${(props) => props.theme.color.primary};
   letter-spacing: 0px;
   line-height: 30px;
   margin-bottom: 10px;
