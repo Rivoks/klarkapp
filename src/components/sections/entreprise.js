@@ -32,6 +32,7 @@ const Entreprise = () => {
                 et son pricing
               </h1>
             </EntrepriseTextGroup>
+            {/* 
             <Row
               style={{ marginTop: "5%", marginBottom: "5%" }}
               justify="center"
@@ -97,13 +98,14 @@ const Entreprise = () => {
                 </div>
               </Col>
             </Row>
+          */}
           </center>
 
           <Row
             gutter={16}
             style={{
               marginTop: "5%",
-              opacity: `${companyExist ? "1" : "0"}`,
+              opacity: `${companyExist ? "1" : "1"}`,
               transitionProperty: "opacity",
               transitionDuration: "0.4s",
               transitionTimingFunction: "ease-in-out",
@@ -309,11 +311,11 @@ const Entreprise = () => {
             </Col>
           </Row>
 
-          <Row
+          {/* <Row
             gutter={16}
             justify="center"
             style={{
-              opacity: `${companyExist ? "0" : "1"}`,
+              opacity: `${companyExist ? "0" : "0"}`,
 
               transition: "0.2s ease-in-out",
             }}
@@ -430,6 +432,7 @@ const Entreprise = () => {
               </div>
             </Col>
           </Row>
+        */}
         </Container>
       </EntrepriseWrapper>
     </>

@@ -26,7 +26,11 @@ const Faq = () => (
             }}
           >
             <Collapse ghost>
-              <Panel header="Qui peut ouvrir un compte Klark ?" key="1">
+              <Panel
+                style={{ fontSize: "24px" }}
+                header="Qui peut ouvrir un compte Klark ?"
+                key="1"
+              >
                 <p>
                   Klark est accessible à l’ensemble des professionnels et
                   entreprises : SA, SAS, SASU, SARL, SC & SCI, EURL, professions
@@ -35,6 +39,7 @@ const Faq = () => (
                 </p>
               </Panel>
               <Panel
+                style={{ fontSize: "24px" }}
                 header="Y a-t-il une différence entre Klark et une banque traditionnelle ?"
                 key="2"
               >
@@ -55,6 +60,7 @@ const Faq = () => (
                 </p>
               </Panel>
               <Panel
+                style={{ fontSize: "24px" }}
                 header="Est-ce que je peux résilier ou modifier mon offre abonnement à tout moment ?"
                 key="3"
               >
@@ -66,6 +72,7 @@ const Faq = () => (
               <Panel
                 header="J'ai déjà un compte pro: dois-je le fermer ?"
                 key="5"
+                style={{ fontSize: "24px" }}
               >
                 <p>
                   Klark peut aussi bien servir de compte principal que de compte
