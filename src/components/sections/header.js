@@ -6,7 +6,7 @@ import { Row, Col } from "antd"
 import { Container } from "../global"
 import { CheckOutlined } from "@ant-design/icons"
 
-import Dashboard from "../../images/dashboard.svg"
+import Dashboard from "../../images/dashboard.png"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -31,7 +31,7 @@ const Header = () => {
         <Flex>
           <HeaderTextGroup>
             <Subtitle>La Néobanque du Futur</Subtitle>
-            <h1>
+            <h1 style={{ fontFamily: "HK Grotesk Extra Bold" }}>
               Néobanque pour les Entreprises. Startup.
               <br />
               Freelancers.
@@ -203,7 +203,7 @@ const HeaderInput = styled.input`
 `
 
 const HeaderButton = styled.button`
-  font-weight: 500;
+  font-family: "HK Grotesk Semibold";
   font-size: 14px;
   color: white;
   letter-spacing: 1px;

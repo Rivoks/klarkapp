@@ -91,7 +91,7 @@ export const ActionsContainer = styled.div`
   }
 
   button {
-    font-family: ${(props) => props.theme.font.normal};
+    font-family: "HK Grotesk Semibold";
     ${(props) => props.theme.font_size.xsmall};
     color: white;
     background: #0055ff;

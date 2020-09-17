@@ -40,7 +40,7 @@ const GetStartedTitle = styled.h3`
 `
 
 const TryItButton = styled.button`
-  font-weight: 500;
+  font-family: "HK Grotesk Semibold";
   font-size: 14px;
   color: white;
   letter-spacing: 1px;

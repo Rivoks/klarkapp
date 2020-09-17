@@ -99,7 +99,13 @@ export default class Navigation extends Component {
           <Mobile hide>{this.getNavList({})}</Mobile>
           <ActionsContainer>
             <AnchorLink href="#top">
-              <button>Ouvrir un compte</button>
+              <button
+                style={{
+                  fontFamily: "HK Grotesk Semibold",
+                }}
+              >
+                Ouvrir un compte
+              </button>
             </AnchorLink>
           </ActionsContainer>
         </StyledContainer>
