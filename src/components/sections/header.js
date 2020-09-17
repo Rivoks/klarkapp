@@ -6,7 +6,7 @@ import { Row, Col } from "antd"
 import { Container } from "../global"
 import { CheckOutlined } from "@ant-design/icons"
 
-import Dashboard from "../../images/dashboard.svg"
+import Dashboard from "../../images/dashboard.png"
 
 const Header = () => {
   const data = useStaticQuery(graphql`

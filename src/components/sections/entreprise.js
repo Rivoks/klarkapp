@@ -26,11 +26,10 @@ const Entreprise = () => {
           <center>
             <EntrepriseTextGroup>
               <Subtitle>Tarifs</Subtitle>
-              <h1>
-                À chaque entreprise son besoin,
-                <br />
-                et son pricing
-              </h1>
+              <h3 style={{ marginBottom: "60px" }}>
+                À chaque entreprise son besoin, et son pricing
+                {/* <br /> */}
+              </h3>
             </EntrepriseTextGroup>
             {/* 
             <Row

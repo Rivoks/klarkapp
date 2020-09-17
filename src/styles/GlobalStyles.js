@@ -199,6 +199,13 @@ const GlobalStyles = createGlobalStyle`
       width:100%;
       opacity: 0.3;
     }
+    .faqTitle{
+    font-size: 22px;
+  }
+  }
+
+  .faqTitle{
+    font-size: 24px;
   }
 
   @media (max-width: ${(props) => props.theme.screen.sm}) {
@@ -211,6 +218,9 @@ const GlobalStyles = createGlobalStyle`
       height: 500px;
       border-radius: 25px;
     }
+    .faqTitle{
+    font-size: 20px;
+  }
   }
 
   

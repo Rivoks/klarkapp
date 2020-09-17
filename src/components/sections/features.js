@@ -82,7 +82,7 @@ const StyledContainer = styled(Container)``
 
 const SectionTitle = styled.h3`
   color: ${(props) => props.theme.color.primary};
-  display: flex;
+  ${"" /* display: flex; */}
   justify-content: center;
   margin: 0 auto 40px;
   text-align: center;
