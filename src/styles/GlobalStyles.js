@@ -203,7 +203,13 @@ const GlobalStyles = createGlobalStyle`
 
   @media (max-width: ${(props) => props.theme.screen.sm}) {
     .dashboard {
-      display: none;
+      position: absolute;
+      top: 60%;
+      z-index: 1;
+      overflow: hidden;
+      width: 100%;
+      height: 500px;
+      border-radius: 25px;
     }
   }
 

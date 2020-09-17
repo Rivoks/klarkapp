@@ -25,8 +25,8 @@ const Faq = () => (
               paddingBottom: "20px",
             }}
           >
-            <Collapse defaultActiveKey={["1"]} ghost>
-              <Panel header="TQui peut ouvrir un compte Klark ?" key="1">
+            <Collapse ghost>
+              <Panel header="Qui peut ouvrir un compte Klark ?" key="1">
                 <p>
                   Klark est accessible à l’ensemble des professionnels et
                   entreprises : SA, SAS, SASU, SARL, SC & SCI, EURL, professions
@@ -65,7 +65,7 @@ const Faq = () => (
               </Panel>
               <Panel
                 header="J'ai déjà un compte pro: dois-je le fermer ?"
-                key="3"
+                key="5"
               >
                 <p>
                   Klark peut aussi bien servir de compte principal que de compte
