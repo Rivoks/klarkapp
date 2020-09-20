@@ -9,11 +9,13 @@ import { Container, Section } from "../global"
 const GetStarted = () => (
   <StyledSection id="klark">
     <GetStartedContainer>
-      <GetStartedTitle>Testez Klark gratuitement</GetStartedTitle>
+      <GetStartedTitle>
+        Inscrivez vous maintenant et bénéficiez de -50% à vie.
+      </GetStartedTitle>
       <AnchorLink href="#top">
         <TryItButton>Ouvrir un compte</TryItButton>
       </AnchorLink>
-      <Subtitle>Ouverture des comptes prochainement.</Subtitle>
+      <Subtitle>Sortie prévue décembre 2020.</Subtitle>
     </GetStartedContainer>
   </StyledSection>
 )

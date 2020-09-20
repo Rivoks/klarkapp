@@ -32,9 +32,7 @@ const Header = () => {
           <HeaderTextGroup>
             <Subtitle>La Néobanque du Futur</Subtitle>
             <h1 style={{ fontFamily: "HK Grotesk Extra Bold" }}>
-              Néobanque pour les Entreprises. Startup.
-              <br />
-              Freelancers.
+              Néobanque pour les Entreprises.
             </h1>
             <h5>
               <Row gutter={8}>
@@ -42,7 +40,7 @@ const Header = () => {
                   <CheckOutlined style={{ color: "green" }} />
                 </Col>
                 <Col>
-                  <span>Ouverture en 5 minutes depuis votre iPhone.</span>
+                  <span>Ouverture en 10 minutes.</span>
                 </Col>
               </Row>
               <Row gutter={8}>
@@ -50,7 +48,7 @@ const Header = () => {
                   <CheckOutlined style={{ color: "green" }} />
                 </Col>
                 <Col>
-                  <span>Service client 7/7. Ultra réactif.</span>
+                  <span>Service client 7j/7.</span>
                 </Col>
               </Row>
               <Row gutter={8}>
@@ -58,21 +56,23 @@ const Header = () => {
                   <CheckOutlined style={{ color: "green" }} />
                 </Col>
                 <Col>
-                  <span>Ouverture en 5 minutes depuis votre iPhone.</span>
+                  <span>IBAN FR, cartes physiques et virtuelles.</span>
                 </Col>
               </Row>
             </h5>
+
+            <h4 style={{ marginTop: "7%", fontSize: "20px" }}>
+              Inscrivez vous maintenant et bénéficiez de -50% à vie.
+            </h4>
             <HeaderForm
               onSubmit={handleSubmit}
-              style={{ marginTop: "7%" }}
+              style={{ marginTop: "3%" }}
               id="open-account"
             >
               <HeaderInput placeholder="Numéro de téléphone" />
               <HeaderButton>Ouvrir un compte</HeaderButton>
             </HeaderForm>
-            <FormSubtitle>
-              Klark vous garantie de ne pas divulguer vos informations.
-            </FormSubtitle>
+            <FormSubtitle>Sortie prévue décembre 2020.</FormSubtitle>
           </HeaderTextGroup>
           <ImageWrapper>
             <StyledImage

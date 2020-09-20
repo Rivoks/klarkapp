@@ -15,51 +15,29 @@ const Features = () => (
   <Section id="fonctionnalités">
     <StyledContainer>
       <Subtitle>Fonctionnalités</Subtitle>
-      <SectionTitle>Voici Klark.</SectionTitle>
+      <SectionTitle>Voici Klark v1</SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
           <FeatureTitle>
             <img src={bankEmoji} alt="" className="emoji" />
           </FeatureTitle>
-          <FeatureTitle>Compte Pro</FeatureTitle>
-          <FeatureText>
-            Un compte pour les profesionnels, tout simplement.
-          </FeatureText>
+          <FeatureTitle>Compte Pro en ligne</FeatureTitle>
+          <FeatureText>IBAN FR et virements instantanés.</FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>
             <img src={cardEmoji} alt="" className="emoji" />
           </FeatureTitle>
-          <FeatureTitle>MasterCard Business</FeatureTitle>
-          <FeatureText>
-            Une carte professionnelle pour votre entreprise.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>
-            <img src={factoryEmoji} alt="" className="emoji" />
-          </FeatureTitle>
-          <FeatureTitle>Création d'entreprise</FeatureTitle>
-          <FeatureText>
-            Une carte professionnelle pour votre entreprise.
-          </FeatureText>
-        </FeatureItem>
-        <FeatureItem>
-          <FeatureTitle>
-            <img src={notepadEmoji} alt="" className="emoji" />
-          </FeatureTitle>
-          <FeatureTitle>Attestation de Dépôt</FeatureTitle>
-          <FeatureText>
-            Votre attestation de dépôt en moins de 24 heures.
-          </FeatureText>
+          <FeatureTitle>MCartes MasterCard</FeatureTitle>
+          <FeatureText>Cartes physiques virtuelles illimitées.</FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>
             <img src={messageEmoji} alt="" className="emoji" />
           </FeatureTitle>
-          <FeatureTitle>Assisstance 7j/7</FeatureTitle>
+          <FeatureTitle>Assisstance 24/7</FeatureTitle>
           <FeatureText>
-            Une équipe pour vous accompagner dans vos projets.
+            Parlez à des experts compétents basés en France.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>

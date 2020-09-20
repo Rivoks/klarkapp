@@ -27,7 +27,7 @@ const Entreprise = () => {
             <EntrepriseTextGroup>
               <Subtitle>Tarifs</Subtitle>
               <h3 style={{ marginBottom: "60px" }}>
-                À chaque entreprise son besoin, et son pricing
+                Tarifs pour toute taille d’entreprise.
                 {/* <br /> */}
               </h3>
             </EntrepriseTextGroup>
@@ -129,18 +129,19 @@ const Entreprise = () => {
                   />
                   <h2 style={{ fontSize: "24px" }}>Free</h2>
                   <h3 style={{ fontWeight: "extrabold" }}>
-                    7,99€
+                    9,99€
                     <span className="per-month"> / mois HT</span>
                   </h3>
+                  <h5 style={{ color: "black" }}>(Au lieu de 14.99€/mois)</h5>
                   <p
                     style={{
                       color: "#455980",
-                      fontSize: "16px",
+                      fontSize: "14px",
                       lineHeight: "23px",
                     }}
                   >
-                    Un compte simple et efficace pour gérer votre activité au
-                    quotidien.
+                    Réservé aux auto-entrepreneurs, micro-entreprises qui
+                    débutent.
                   </p>
                   <Divider orientation="center"></Divider>
                 </center>
@@ -186,15 +187,15 @@ const Entreprise = () => {
                     19,99€
                     <span className="per-month"> / mois HT</span>
                   </h3>
+                  <h5 style={{ color: "black" }}>(Au lieu de 29.99€/mois)</h5>
                   <p
                     style={{
                       color: "#455980",
-                      fontSize: "16px",
+                      fontSize: "14px",
                       lineHeight: "23px",
                     }}
                   >
-                    Un compte simple et efficace pour gérer votre activité au
-                    quotidien.
+                    La formule la plus populaire pour les entreprises.
                   </p>
                   <Divider orientation="center"></Divider>
                 </center>
@@ -236,15 +237,15 @@ const Entreprise = () => {
                     79,99€
                     <span className="per-month"> / mois HT</span>
                   </h3>
+                  <h5 style={{ color: "black" }}>(Au lieu de 119.99€/mois)</h5>
                   <p
                     style={{
                       color: "#455980",
-                      fontSize: "16px",
+                      fontSize: "14px",
                       lineHeight: "23px",
                     }}
                   >
-                    Un compte simple et efficace pour gérer votre activité au
-                    quotidien.
+                    Idéal pour les entreprises avec des flux importants.
                   </p>
                   <Divider orientation="center"></Divider>
                 </center>

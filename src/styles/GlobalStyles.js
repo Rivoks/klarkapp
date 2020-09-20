@@ -205,7 +205,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .faqTitle{
-    font-size: 24px;
+    font-size: 20px;
   }
 
   @media (max-width: ${(props) => props.theme.screen.sm}) {
@@ -219,7 +219,7 @@ const GlobalStyles = createGlobalStyle`
       border-radius: 25px;
     }
     .faqTitle{
-    font-size: 20px;
+    font-size: 18px;
   }
   }
 
