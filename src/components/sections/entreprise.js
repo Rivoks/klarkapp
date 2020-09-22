@@ -151,12 +151,6 @@ const Entreprise = () => {
                 <FeatureRow>1 compte utilisateur</FeatureRow>
                 <FeatureRow>IBAN Français </FeatureRow>
                 <FeatureRow>Support 7 jours/7 </FeatureRow>
-                <FeatureRow className="disabled-feature">
-                  Accès pour votre comptable{" "}
-                </FeatureRow>
-                <FeatureRow className="disabled-feature">
-                  Rôles et permissions
-                </FeatureRow>
 
                 <AnchorLink href="#top">
                   <EntrepriseButton>Ouvrir un compte</EntrepriseButton>

@@ -10,6 +10,7 @@ import Footer from "../components/sections/footer"
 import GetStarted from "../components/sections/getstarted"
 import Entreprise from "../components/sections/entreprise"
 import Faq from "../components/sections/faq"
+import Splash from "../components/sections/splash"
 
 const IndexPage = () => (
   <Layout>
@@ -19,6 +20,7 @@ const IndexPage = () => (
     <Features />
     <GetStarted />
     <Entreprise />
+    <Splash />
     <Faq />
     <Footer />
   </Layout>

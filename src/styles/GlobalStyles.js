@@ -209,6 +209,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @media (max-width: ${(props) => props.theme.screen.sm}) {
+
     .dashboard {
       position: absolute;
       top: 60%;
@@ -218,9 +219,11 @@ const GlobalStyles = createGlobalStyle`
       height: 500px;
       border-radius: 25px;
     }
+
     .faqTitle{
     font-size: 18px;
-  }
+    }
+
   }
 
   

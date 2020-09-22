@@ -7,8 +7,6 @@ import "../../styles/GlobalStyles.js"
 
 import bankEmoji from "../../images/bank-emoji.png"
 import cardEmoji from "../../images/card-emoji.png"
-import factoryEmoji from "../../images/factory-emoji.png"
-import notepadEmoji from "../../images/notepad-emoji.png"
 import messageEmoji from "../../images/message-emoji.png"
 
 const Features = () => (
@@ -28,7 +26,7 @@ const Features = () => (
           <FeatureTitle>
             <img src={cardEmoji} alt="" className="emoji" />
           </FeatureTitle>
-          <FeatureTitle>MCartes MasterCard</FeatureTitle>
+          <FeatureTitle>Cartes MasterCard</FeatureTitle>
           <FeatureText>Cartes physiques virtuelles illimitées.</FeatureText>
         </FeatureItem>
         <FeatureItem>
