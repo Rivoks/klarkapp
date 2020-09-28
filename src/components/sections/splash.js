@@ -23,7 +23,7 @@ const Splash = () => {
                     paddingLeft: "10%",
                   }}
                 >
-                  Klark
+                  Comme une banque, mais en mieux.
                 </Subtitle>
                 <h3
                   style={{
@@ -32,8 +32,7 @@ const Splash = () => {
                     paddingLeft: "10%",
                   }}
                 >
-                  Un outil complet pour une meilleure gestion de votre
-                  entreprise.
+                  Nous avons tout ce que vous avez besoin.
                 </h3>
                 <FeatureText>
                   <Row style={{ marginBottom: "10%" }}>

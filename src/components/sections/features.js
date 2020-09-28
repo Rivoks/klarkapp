@@ -28,7 +28,7 @@ const Features = () => (
             <img src={cardEmoji} alt="" className="emoji" />
           </FeatureTitle>
           <FeatureTitle>Cartes MasterCard</FeatureTitle>
-          <FeatureText>Cartes physiques virtuelles illimitées.</FeatureText>
+          <FeatureText>Cartes physiques et virtuelles illimitées.</FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>

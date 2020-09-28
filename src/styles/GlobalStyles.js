@@ -143,6 +143,7 @@ const GlobalStyles = createGlobalStyle`
     -webkit-animation: MoveUpDown 1s infinite  alternate;
     animation: MoveUpDown 1s infinite alternate;
     z-index: 99;
+    margin-right: 0;
   }
 
   @keyframes MoveUpDown {

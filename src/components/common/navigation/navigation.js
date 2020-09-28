@@ -104,7 +104,7 @@ export default class Navigation extends Component {
                   fontFamily: "HK Grotesk Semibold",
                 }}
               >
-                Ouvrir un compte
+                Pré-inscription
               </button>
             </AnchorLink>
           </ActionsContainer>

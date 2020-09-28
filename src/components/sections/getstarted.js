@@ -13,7 +13,7 @@ const GetStarted = () => (
         Inscrivez vous maintenant et bénéficiez de -50% à vie.
       </GetStartedTitle>
       <AnchorLink href="#top">
-        <TryItButton>Ouvrir un compte</TryItButton>
+        <TryItButton>Pré-inscription</TryItButton>
       </AnchorLink>
       <Subtitle>Sortie prévue décembre 2020.</Subtitle>
     </GetStartedContainer>

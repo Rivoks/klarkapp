@@ -40,7 +40,7 @@ const Header = () => {
                   <CheckOutlined style={{ color: "green" }} />
                 </Col>
                 <Col>
-                  <span>Ouverture en 10 minutes en ligne.</span>
+                  <span>Ouverture en 10 minutes, 100% en ligne.</span>
                 </Col>
               </Row>
               <Row gutter={8}>
@@ -70,7 +70,7 @@ const Header = () => {
               id="open-account"
             >
               <HeaderInput placeholder="Numéro de téléphone" />
-              <HeaderButton>Ouvrir un compte</HeaderButton>
+              <HeaderButton>Pré-inscription</HeaderButton>
             </HeaderForm>
             <FormSubtitle>Sortie prévue décembre 2020.</FormSubtitle>
           </HeaderTextGroup>

@@ -133,7 +133,11 @@ const Entreprise = () => {
                     9,99€
                     <span className="per-month"> / mois HT</span>
                   </h3>
-                  <h5 style={{ color: "black" }}>(Au lieu de 14.99€/mois)</h5>
+                  <h5
+                    style={{ color: "black", textDecoration: "line-through" }}
+                  >
+                    (Au lieu de 14.99€/mois)
+                  </h5>
                   <p
                     style={{
                       color: "#455980",
@@ -154,7 +158,7 @@ const Entreprise = () => {
                 <FeatureRow>Support 7 jours/7 </FeatureRow>
 
                 <AnchorLink href="#top">
-                  <EntrepriseButton>Ouvrir un compte</EntrepriseButton>
+                  <EntrepriseButton>Pré-inscription</EntrepriseButton>
                 </AnchorLink>
 
                 <FormSubtitle>1er mois offert - Sans engagement</FormSubtitle>
@@ -183,7 +187,11 @@ const Entreprise = () => {
                     19,99€
                     <span className="per-month"> / mois HT</span>
                   </h3>
-                  <h5 style={{ color: "black" }}>(Au lieu de 29.99€/mois)</h5>
+                  <h5
+                    style={{ color: "black", textDecoration: "line-through" }}
+                  >
+                    (Au lieu de 29.99€/mois)
+                  </h5>
                   <p
                     style={{
                       color: "#455980",
@@ -205,7 +213,7 @@ const Entreprise = () => {
                 <FeatureRow>Rôles et permissions</FeatureRow>
 
                 <AnchorLink href="#top">
-                  <EntrepriseButton>Ouvrir un compte</EntrepriseButton>
+                  <EntrepriseButton>Pré-inscription</EntrepriseButton>
                 </AnchorLink>
 
                 <FormSubtitle>1er mois offert - Sans engagement</FormSubtitle>
@@ -234,7 +242,9 @@ const Entreprise = () => {
                     79,99€
                     <span className="per-month"> / mois HT</span>
                   </h3>
-                  <h5 style={{ color: "black" }}>(Au lieu de 119.99€/mois)</h5>
+                  <h5 style={{ color: "black" }}>
+                    <strike>(Au lieu de 119.99€/mois)</strike>
+                  </h5>
                   <p
                     style={{
                       color: "#455980",
@@ -258,7 +268,7 @@ const Entreprise = () => {
                 <FeatureRow>Suivi personnalisé de compte</FeatureRow>
 
                 <AnchorLink href="#top">
-                  <EntrepriseButton>Ouvrir un compte</EntrepriseButton>
+                  <EntrepriseButton>Pré-inscription</EntrepriseButton>
                 </AnchorLink>
 
                 <FormSubtitle>1er mois offert - Sans engagement</FormSubtitle>
@@ -367,7 +377,7 @@ const Entreprise = () => {
                 <FeatureRow>Support 7 jours/7 </FeatureRow>
 
                 <AnchorLink href="#top">
-                  <EntrepriseButton>Ouvrir un compte</EntrepriseButton>
+                  <EntrepriseButton>Pré-inscription</EntrepriseButton>
                 </AnchorLink>
 
                 <FormSubtitle>1er mois offert - Sans engagement</FormSubtitle>
@@ -424,7 +434,7 @@ const Entreprise = () => {
                 <FeatureRow>Rôles et permissions</FeatureRow>
 
                 <AnchorLink href="#top">
-                  <EntrepriseButton>Ouvrir un compte</EntrepriseButton>
+                  <EntrepriseButton>Pré-inscription</EntrepriseButton>
                 </AnchorLink>
                 <FormSubtitle>1er mois offert - Sans engagement</FormSubtitle>
               </div>
