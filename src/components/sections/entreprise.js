@@ -25,9 +25,9 @@ const Entreprise = () => {
         <Container>
           <center>
             <EntrepriseTextGroup>
-              <Subtitle>Tarifs</Subtitle>
+              <Subtitle>Pas de frais cachés</Subtitle>
               <h3 style={{ marginBottom: "60px" }}>
-                Tarifs pour toute taille d’entreprise.
+                Arrêtez les frais bancaires exagérés
                 {/* <br /> */}
               </h3>
             </EntrepriseTextGroup>
@@ -133,11 +133,7 @@ const Entreprise = () => {
                     9,99€
                     <span className="per-month"> / mois HT</span>
                   </h3>
-                  <h5
-                    style={{ color: "black", textDecoration: "line-through" }}
-                  >
-                    (Au lieu de 14.99€/mois)
-                  </h5>
+                  <h5 style={{ color: "#44bd32" }}>(Économisez 119,88€)</h5>
                   <p
                     style={{
                       color: "#455980",
@@ -155,13 +151,14 @@ const Entreprise = () => {
                 <FeatureRow>Cartes virtuelles en option</FeatureRow>
                 <FeatureRow>1 compte utilisateur</FeatureRow>
                 <FeatureRow>IBAN Français </FeatureRow>
+                <FeatureRow>Limites de retrait 1000,00 € </FeatureRow>
                 <FeatureRow>Support 7 jours/7 </FeatureRow>
 
                 <AnchorLink href="#top">
                   <EntrepriseButton>Pré-inscription</EntrepriseButton>
                 </AnchorLink>
 
-                <FormSubtitle>1er mois offert - Sans engagement</FormSubtitle>
+                <FormSubtitle>30 jours gratuits - Sans engagement</FormSubtitle>
               </div>
             </Col>
             <Col
@@ -187,11 +184,7 @@ const Entreprise = () => {
                     19,99€
                     <span className="per-month"> / mois HT</span>
                   </h3>
-                  <h5
-                    style={{ color: "black", textDecoration: "line-through" }}
-                  >
-                    (Au lieu de 29.99€/mois)
-                  </h5>
+                  <h5 style={{ color: "#44bd32" }}>(Économisez 239,88€)</h5>
                   <p
                     style={{
                       color: "#455980",
@@ -208,7 +201,8 @@ const Entreprise = () => {
                 <FeatureRow>2 cartes virtuelles</FeatureRow>
                 <FeatureRow>5 comptes utilisateur</FeatureRow>
                 <FeatureRow>IBAN Français </FeatureRow>
-                <FeatureRow>Support 7 jours/7 </FeatureRow>
+                <FeatureRow>Limites de retrait 1500,00 € </FeatureRow>
+                <FeatureRow>Support 7/7 </FeatureRow>
                 <FeatureRow>Accès pour votre comptable </FeatureRow>
                 <FeatureRow>Rôles et permissions</FeatureRow>
 
@@ -216,7 +210,7 @@ const Entreprise = () => {
                   <EntrepriseButton>Pré-inscription</EntrepriseButton>
                 </AnchorLink>
 
-                <FormSubtitle>1er mois offert - Sans engagement</FormSubtitle>
+                <FormSubtitle>30 jours gratuits - Sans engagement</FormSubtitle>
               </div>
             </Col>
             <Col
@@ -242,9 +236,7 @@ const Entreprise = () => {
                     79,99€
                     <span className="per-month"> / mois HT</span>
                   </h3>
-                  <h5 style={{ color: "black" }}>
-                    <strike>(Au lieu de 119.99€/mois)</strike>
-                  </h5>
+                  <h5 style={{ color: "#44bd32" }}>(Économisez 959,88€)</h5>
                   <p
                     style={{
                       color: "#455980",
@@ -257,11 +249,12 @@ const Entreprise = () => {
                   <Divider orientation="center"></Divider>
                 </center>
                 <FeatureRow>500 virements et prélèvements SEPA</FeatureRow>
-                <FeatureRow>5 carte physique</FeatureRow>
+                <FeatureRow>5 cartes physiques</FeatureRow>
                 <FeatureRow>Cartes virtuelles illimités</FeatureRow>
                 <FeatureRow>Comptes utilisateur illimités</FeatureRow>
                 <FeatureRow>IBAN Français </FeatureRow>
                 <FeatureRow>Support 7 jours/7 </FeatureRow>
+                <FeatureRow>Limites de retrait 3000,00 € </FeatureRow>
                 <FeatureRow>Accès pour votre comptable </FeatureRow>
                 <FeatureRow>Rôles et permissions</FeatureRow>
                 <FeatureRow>Support client prioritaire</FeatureRow>
@@ -271,7 +264,7 @@ const Entreprise = () => {
                   <EntrepriseButton>Pré-inscription</EntrepriseButton>
                 </AnchorLink>
 
-                <FormSubtitle>1er mois offert - Sans engagement</FormSubtitle>
+                <FormSubtitle>30 jours gratuits - Sans engagement</FormSubtitle>
               </div>
             </Col>
             <Col
@@ -380,7 +373,7 @@ const Entreprise = () => {
                   <EntrepriseButton>Pré-inscription</EntrepriseButton>
                 </AnchorLink>
 
-                <FormSubtitle>1er mois offert - Sans engagement</FormSubtitle>
+                <FormSubtitle>30 jours gratuits - Sans engagement</FormSubtitle>
               </div>
             </Col>
             <Col
@@ -436,7 +429,7 @@ const Entreprise = () => {
                 <AnchorLink href="#top">
                   <EntrepriseButton>Pré-inscription</EntrepriseButton>
                 </AnchorLink>
-                <FormSubtitle>1er mois offert - Sans engagement</FormSubtitle>
+                <FormSubtitle>30 jours gratuits - Sans engagement</FormSubtitle>
               </div>
             </Col>
           </Row>

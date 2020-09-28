@@ -10,7 +10,7 @@ const GetStarted = () => (
   <StyledSection id="klark">
     <GetStartedContainer>
       <GetStartedTitle>
-        Inscrivez vous maintenant et bénéficiez de -50% à vie.
+        Inscrivez-vous maintenant et bénéficiez de -50% à vie.
       </GetStartedTitle>
       <AnchorLink href="#top">
         <TryItButton>Pré-inscription</TryItButton>

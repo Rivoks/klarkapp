@@ -8,13 +8,15 @@ import "../../styles/GlobalStyles.js"
 import bankEmoji from "../../images/bank-emoji.png"
 import cardEmoji from "../../images/card-emoji.png"
 import messageEmoji from "../../images/message-emoji.png"
-import dashboardEmoji from "../../images/dashboard-emoji.png"
+import rocketEmoji from "../../images/rocket-emoji.png"
 
 const Features = () => (
   <Section id="fonctionnalités">
     <StyledContainer>
-      <Subtitle>Fonctionnalités</Subtitle>
-      <SectionTitle>Voici Klark v1</SectionTitle>
+      <Subtitle>Voici Klark V1</Subtitle>
+      <SectionTitle>
+        C'est comme une banque, en plus simple et rapide
+      </SectionTitle>
       <FeaturesGrid>
         <FeatureItem>
           <FeatureTitle>
@@ -32,11 +34,11 @@ const Features = () => (
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>
-            <img src={dashboardEmoji} alt="" className="emoji" />
+            <img src={rocketEmoji} alt="" className="emoji" />
           </FeatureTitle>
-          <FeatureTitle>Outil de Gestion intégré</FeatureTitle>
+          <FeatureTitle>Hauts plafonds</FeatureTitle>
           <FeatureText>
-            Gérer vos transactions et vos collaborateurs en quelques clics.
+            Des plafonds 7x supérieur par rapport aux autres banques.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>

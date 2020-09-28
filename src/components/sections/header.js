@@ -62,7 +62,7 @@ const Header = () => {
             </h5>
 
             <h4 style={{ marginTop: "7%", fontSize: "20px" }}>
-              Inscrivez vous maintenant et bénéficiez de -50% à vie.
+              Inscrivez-vous maintenant et bénéficiez de -50% à vie.
             </h4>
             <HeaderForm
               onSubmit={handleSubmit}

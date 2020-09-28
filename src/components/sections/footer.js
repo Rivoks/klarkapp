@@ -24,8 +24,8 @@ const Footer = () => (
           </li>
         </ul>
       </FooterColumn>
-      <FooterColumn>
-        <span>Réseaux</span>
+
+      {/* <span>Réseaux</span>
         <ul>
           <li>
             <a href="http://medium.com/@klarkbank" className="footer-links">
@@ -53,8 +53,8 @@ const Footer = () => (
               Linkedin
             </a>
           </li>
-        </ul>
-      </FooterColumn>
+        </ul> */}
+
       <FooterColumn>
         <span>Support</span>
         <ul>
@@ -65,19 +65,19 @@ const Footer = () => (
           </li>
           <li>
             <a href="mailto:hello@klark.app" className="footer-links">
-              Assistance
+              Contact
+            </a>
+          </li>
+          <li>
+            <a href="http://medium.com/@klarkbank" className="footer-links">
+              Blog
             </a>
           </li>
         </ul>
       </FooterColumn>
       <FooterColumn>
-        <span>La banque</span>
+        <span>La Banque</span>
         <ul>
-          <li>
-            <a href="#top" className="footer-links">
-              La Banque
-            </a>
-          </li>
           <li>
             <a href="#" className="footer-links">
               Confidentialité
@@ -90,15 +90,17 @@ const Footer = () => (
           </li>
           <li>
             <a href="#" className="footer-links">
-              Nos CGU
+              Conditions générales
             </a>
           </li>
         </ul>
       </FooterColumn>
     </FooterColumnContainer>
-    <BrandContainer>
-      <Logo>Klark</Logo>
-    </BrandContainer>
+    {/* <BrandContainer>
+      <Logo>
+        <a href="#top">Klark</a>
+      </Logo>
+    </BrandContainer> */}
   </FooterWrapper>
 )
 
@@ -139,7 +141,7 @@ const BrandContainer = styled(Container)`
 `
 const FooterColumnContainer = styled(Container)`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 32px;
   justify-content: start;
   @media (max-width: ${(props) => props.theme.screen.sm}) {

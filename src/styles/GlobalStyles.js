@@ -143,7 +143,6 @@ const GlobalStyles = createGlobalStyle`
     -webkit-animation: MoveUpDown 1s infinite  alternate;
     animation: MoveUpDown 1s infinite alternate;
     z-index: 99;
-    margin-right: 0;
   }
 
   @keyframes MoveUpDown {
@@ -212,8 +211,8 @@ const GlobalStyles = createGlobalStyle`
   .blueBlock {
     background-color: #0055FF;
     border-radius: 25px;
-    padding-top: 50px!important;
-    padding-right: 0;
+    padding-top: 60px!important;
+    padding-right: 0px!important;
     padding-bottom: 5%;
     width: 100%;
   }

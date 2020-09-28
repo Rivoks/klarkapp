@@ -4,10 +4,10 @@ import { Container } from "../global"
 import { Row, Col, Divider } from "antd"
 import "../../../src/styles/GlobalStyles"
 import SplashImg from "../../images/splash.png"
-import Transaction from "../../images/transaction.png"
+import Transaction from "../../images/bell-emoji.png"
 import collabEmoji from "../../images/collab-emoji.png"
 import cardEmoji from "../../images/card-emoji.png"
-import transfertEmoji from "../../images/transfert-emoji.png"
+import transfertEmoji from "../../images/bolt-emoji.png"
 
 const Splash = () => {
   return (
@@ -40,25 +40,16 @@ const Splash = () => {
                       <img
                         src={Transaction}
                         alt=""
-                        style={{ height: "40px", marginTop: "10px" }}
+                        style={{ height: "40px" }}
                       />
                     </Col>
-                    <Col span={20}>
-                      Gérez toutes vos transactions en temps réel.
-                    </Col>
+                    <Col span={20}>Toutes vos transactions en temps réel.</Col>
                   </Row>
                   <Row style={{ marginBottom: "10%" }}>
                     <Col span={4}>
-                      <img
-                        src={cardEmoji}
-                        alt=""
-                        style={{ height: "40px", marginTop: "5px" }}
-                      />
+                      <img src={cardEmoji} alt="" style={{ height: "40px" }} />
                     </Col>
-                    <Col span={20}>
-                      Émission et blocage des cartes virtuelles en quelques
-                      secondes.
-                    </Col>
+                    <Col span={20}>Cartes virtuelles instantanées.</Col>
                   </Row>
 
                   <Row style={{ marginBottom: "10%" }}>
@@ -66,12 +57,10 @@ const Splash = () => {
                       <img
                         src={collabEmoji}
                         alt=""
-                        style={{ height: "40px", marginTop: "5px" }}
+                        style={{ height: "40px" }}
                       />
                     </Col>
-                    <Col span={20}>
-                      Ajoutez des collaborateurs pour dynamiser votre activité.
-                    </Col>
+                    <Col span={20}>Espace pour votre comptable.</Col>
                   </Row>
 
                   <Row style={{ marginBottom: "10%" }}>
@@ -79,7 +68,7 @@ const Splash = () => {
                       <img
                         src={transfertEmoji}
                         alt=""
-                        style={{ height: "40px", marginTop: "5px" }}
+                        style={{ height: "40px", marginTop: "10px" }}
                       />
                     </Col>
                     <Col span={20}>
@@ -94,7 +83,12 @@ const Splash = () => {
                 className="headerImg"
                 src={SplashImg}
                 alt=""
-                style={{ width: "100%" }}
+                style={{
+                  width: "100%",
+                  marginRight: "0px",
+                  marginTop: "15px",
+                  marginBottom: "30px",
+                }}
               />
             </Col>
           </Row>
