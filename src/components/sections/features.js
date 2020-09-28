@@ -8,6 +8,7 @@ import "../../styles/GlobalStyles.js"
 import bankEmoji from "../../images/bank-emoji.png"
 import cardEmoji from "../../images/card-emoji.png"
 import messageEmoji from "../../images/message-emoji.png"
+import dashboardEmoji from "../../images/dashboard-emoji.png"
 
 const Features = () => (
   <Section id="fonctionnalités">
@@ -31,20 +32,20 @@ const Features = () => (
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>
-            <img src={messageEmoji} alt="" className="emoji" />
+            <img src={dashboardEmoji} alt="" className="emoji" />
           </FeatureTitle>
-          <FeatureTitle>Assisstance 24/7</FeatureTitle>
+          <FeatureTitle>Outil de Gestion intégré</FeatureTitle>
           <FeatureText>
-            Parlez à des experts compétents basés en France.
+            Gérer vos transactions et vos collaborateurs en quelques clics.
           </FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>
             <img src={messageEmoji} alt="" className="emoji" />
           </FeatureTitle>
-          <FeatureTitle>Assisstance 7j/7</FeatureTitle>
+          <FeatureTitle>Assisstance 24/7</FeatureTitle>
           <FeatureText>
-            Une équipe pour vous accompagner dans vos projets.
+            Parlez à des experts compétents basés en France.
           </FeatureText>
         </FeatureItem>
       </FeaturesGrid>

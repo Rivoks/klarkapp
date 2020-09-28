@@ -40,7 +40,7 @@ const Header = () => {
                   <CheckOutlined style={{ color: "green" }} />
                 </Col>
                 <Col>
-                  <span>Ouverture en 10 minutes.</span>
+                  <span>Ouverture en 10 minutes en ligne.</span>
                 </Col>
               </Row>
               <Row gutter={8}>

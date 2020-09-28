@@ -113,7 +113,8 @@ const Entreprise = () => {
             <Col
               lg={{ span: 6 }}
               md={{ span: 12 }}
-              sm={{ span: 12 }}
+              sm={{ span: 24 }}
+              xs={{ span: 24 }}
               className="gutter-row"
               style={{
                 display: `${companyExist ? "block" : "none"}`,
@@ -162,7 +163,8 @@ const Entreprise = () => {
             <Col
               lg={{ span: 6 }}
               md={{ span: 12 }}
-              sm={{ span: 12 }}
+              sm={{ span: 24 }}
+              xs={{ span: 24 }}
               className="gutter-row"
               style={{
                 display: `${companyExist ? "block" : "none"}`,
@@ -212,7 +214,8 @@ const Entreprise = () => {
             <Col
               lg={{ span: 6 }}
               md={{ span: 12 }}
-              sm={{ span: 12 }}
+              sm={{ span: 24 }}
+              xs={{ span: 24 }}
               className="gutter-row"
               style={{
                 display: `${companyExist ? "block" : "none"}`,
@@ -264,7 +267,8 @@ const Entreprise = () => {
             <Col
               lg={{ span: 6 }}
               md={{ span: 12 }}
-              sm={{ span: 12 }}
+              sm={{ span: 24 }}
+              xs={{ span: 24 }}
               className="gutter-row"
               style={{
                 display: `${companyExist ? "block" : "none"}`,

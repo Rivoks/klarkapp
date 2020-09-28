@@ -208,7 +208,20 @@ const GlobalStyles = createGlobalStyle`
     font-size: 20px;
   }
 
+  .blueBlock {
+    background-color: #0055FF;
+    border-radius: 25px;
+    padding-top: 50px!important;
+    padding-right: 0;
+    padding-bottom: 5%;
+    width: 100%;
+  }
+
   @media (max-width: ${(props) => props.theme.screen.sm}) {
+
+    .blueBlock {
+      width: 95%;
+    }
 
     .dashboard {
       position: absolute;
@@ -225,6 +238,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
   }
+
 
   
 

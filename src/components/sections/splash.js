@@ -4,25 +4,18 @@ import { Container } from "../global"
 import { Row, Col, Divider } from "antd"
 import "../../../src/styles/GlobalStyles"
 import SplashImg from "../../images/splash.png"
-import factoryEmoji from "../../images/factory-emoji.png"
-import notepadEmoji from "../../images/notepad-emoji.png"
+import Transaction from "../../images/transaction.png"
+import collabEmoji from "../../images/collab-emoji.png"
+import cardEmoji from "../../images/card-emoji.png"
+import transfertEmoji from "../../images/transfert-emoji.png"
 
 const Splash = () => {
   return (
     <>
       <SplashWrapper id="tarifs">
-        <Container
-          style={{
-            backgroundColor: "#0055FF",
-            borderRadius: "25px",
-            paddingLeft: "0",
-            paddingRight: "0",
-            paddingTop: "5%",
-            paddingBottom: "5%",
-          }}
-        >
+        <Container className="blueBlock">
           <Row gutter={16}>
-            <Col span={12}>
+            <Col md={{ span: 12 }} sm={{ span: 24 }} xs={{ span: 24 }}>
               <SplashTextGroup>
                 <Subtitle
                   style={{
@@ -39,71 +32,70 @@ const Splash = () => {
                     paddingLeft: "10%",
                   }}
                 >
-                  Carte virtuelle gratuite pour votre entreprise.
+                  Un outil complet pour une meilleure gestion de votre
+                  entreprise.
                 </h3>
                 <FeatureText>
                   <Row style={{ marginBottom: "10%" }}>
                     <Col span={4}>
                       <img
-                        src={factoryEmoji}
+                        src={Transaction}
                         alt=""
-                        style={{ height: "40px", marginTop: "5px" }}
+                        style={{ height: "40px", marginTop: "10px" }}
                       />
                     </Col>
                     <Col span={20}>
-                      Émission et blocage des cartes virtuelles en une minute.
+                      Gérez toutes vos transactions en temps réel.
                     </Col>
                   </Row>
                   <Row style={{ marginBottom: "10%" }}>
                     <Col span={4}>
                       <img
-                        src={factoryEmoji}
+                        src={cardEmoji}
                         alt=""
                         style={{ height: "40px", marginTop: "5px" }}
                       />
                     </Col>
                     <Col span={20}>
-                      Émission et blocage des cartes virtuelles en une minute.
-                    </Col>
-                  </Row>
-
-                  <Row style={{ marginBottom: "10%" }}>
-                    <Col span={4}>
-                      <img
-                        src={factoryEmoji}
-                        alt=""
-                        style={{ height: "40px", marginTop: "5px" }}
-                      />
-                    </Col>
-                    <Col span={20}>
-                      Émission et blocage des cartes virtuelles en une minute.
+                      Émission et blocage des cartes virtuelles en quelques
+                      secondes.
                     </Col>
                   </Row>
 
                   <Row style={{ marginBottom: "10%" }}>
                     <Col span={4}>
                       <img
-                        src={factoryEmoji}
+                        src={collabEmoji}
                         alt=""
                         style={{ height: "40px", marginTop: "5px" }}
                       />
                     </Col>
                     <Col span={20}>
-                      Émission et blocage des cartes virtuelles en une minute.
+                      Ajoutez des collaborateurs pour dynamiser votre activité.
+                    </Col>
+                  </Row>
+
+                  <Row style={{ marginBottom: "10%" }}>
+                    <Col span={4}>
+                      <img
+                        src={transfertEmoji}
+                        alt=""
+                        style={{ height: "40px", marginTop: "5px" }}
+                      />
+                    </Col>
+                    <Col span={20}>
+                      Virements instantanés jusqu'à <br /> 100 000€.
                     </Col>
                   </Row>
                 </FeatureText>
               </SplashTextGroup>
             </Col>
-            <Col span={12}>
+            <Col md={{ span: 12 }} sm={{ span: 24 }} xs={{ span: 24 }}>
               <img
+                className="headerImg"
                 src={SplashImg}
-                alt="Klarek"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  objectFit: "cover",
-                }}
+                alt=""
+                style={{ width: "100%" }}
               />
             </Col>
           </Row>
