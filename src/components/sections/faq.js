@@ -46,7 +46,7 @@ const Faq = () => (
                 <p>
                   Klark est un agent prestataire de service de paiement, régulé
                   par la FCA (Banque d’Angleterre), et enregistré sous le numéro
-                  XXX XXX XXX. Cela permet à Klark de vous offrir tous les
+                  885 401 265. Cela permet à Klark de vous offrir tous les
                   outils nécessaires à la gestion de votre compte professionnel
                   : carte Mastercard, compte courant avec IBAN français,
                   retraits aux distributeurs. Pour garantir la sécurité des
