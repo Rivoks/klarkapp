@@ -10,7 +10,6 @@ const Footer = () => (
   <FooterWrapper id="footer">
     <FooterColumnContainer>
       <FooterColumn>
-        <span>Features</span>
         <ul>
           <li>
             <a href="#">
@@ -76,7 +75,7 @@ const Footer = () => (
         </ul>
       </FooterColumn>
       <FooterColumn>
-        <span>La Banque</span>
+        <span>À propos</span>
         <ul>
           <li>
             <a href="#" className="footer-links">

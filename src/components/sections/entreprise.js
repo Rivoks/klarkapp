@@ -133,7 +133,7 @@ const Entreprise = () => {
                     9,99€
                     <span className="per-month"> / mois HT</span>
                   </h3>
-                  <h5 style={{ color: "#44bd32" }}>(Économisez 119,88€)</h5>
+                  <h5 style={{ color: "#95a5a6" }}>(Au lieu de 119,88€)</h5>
                   <p
                     style={{
                       color: "#455980",
@@ -184,7 +184,7 @@ const Entreprise = () => {
                     19,99€
                     <span className="per-month"> / mois HT</span>
                   </h3>
-                  <h5 style={{ color: "#44bd32" }}>(Économisez 239,88€)</h5>
+                  <h5 style={{ color: "#95a5a6" }}>(Au lieu de 239,88€)</h5>
                   <p
                     style={{
                       color: "#455980",
@@ -236,7 +236,7 @@ const Entreprise = () => {
                     79,99€
                     <span className="per-month"> / mois HT</span>
                   </h3>
-                  <h5 style={{ color: "#44bd32" }}>(Économisez 959,88€)</h5>
+                  <h5 style={{ color: "#95a5a6" }}>(Au lieu de 959,88€)</h5>
                   <p
                     style={{
                       color: "#455980",

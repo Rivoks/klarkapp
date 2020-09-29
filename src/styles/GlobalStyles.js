@@ -237,6 +237,11 @@ const GlobalStyles = createGlobalStyle`
     font-size: 18px;
     }
 
+    .custom-card{
+      height: auto;
+      padding-bottom: 120px;
+    }
+
   }
 
 
