@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Klark`,
     description: `La néobanque du futur`,
-    author: `Yazid Bouhria`,
+    author: `Klark`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -36,13 +36,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Klark`,
+        short_name: `Klark`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `src/images/icon.png`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
