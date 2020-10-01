@@ -2,9 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
-import { Row, Col } from "antd"
+import { Row, Col, message, Button, Space } from "antd"
 import { Container } from "../global"
 import { CheckOutlined } from "@ant-design/icons"
+import emailjs from "emailjs-com"
 
 import Dashboard from "../../images/Dashboard.png"
 
@@ -21,8 +22,29 @@ const Header = () => {
     }
   `)
 
-  const handleSubmit = (event) => {
-    event.preventDefault()
+  const handleSubmit = (e) => {
+    e.preventDefault() //This is important, i'm not sure why, but the email won't send without it
+
+    emailjs
+      .sendForm(
+        "service_klark1",
+        "template_pgc21ve",
+        e.target,
+        "user_8ayg8CTlErK7KugcDtbmo"
+      )
+      .then(
+        (result) => {
+          message
+            .success(
+              "Votre pré-inscription a bien été prise en compte. Merci !",
+              3
+            )
+            .then(() => window.location.reload())
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
   }
 
   return (
@@ -69,7 +91,12 @@ const Header = () => {
               style={{ marginTop: "3%" }}
               id="open-account"
             >
-              <HeaderInput placeholder="Numéro de téléphone" />
+              <HeaderInput
+                placeholder="Numéro de téléphone"
+                name="phone_number"
+                type="tel"
+                pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}|[0-9]{10}"
+              />
               <HeaderButton>Pré-inscription</HeaderButton>
             </HeaderForm>
             <FormSubtitle>Sortie prévue décembre 2020.</FormSubtitle>
