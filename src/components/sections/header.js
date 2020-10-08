@@ -10,20 +10,12 @@ import emailjs from "emailjs-com"
 import Dashboard from "../../images/Dashboard.png"
 import iPhone from "../../images/iphone.svg"
 
-const Header = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(sourceInstanceName: { eq: "product" }, name: { eq: "iphone" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_tracedSVG
-          }
-        }
-      }
-    }
-  `)
+class Header extends React.Component {
+  componentDidMount() {
+    document.getElementById("phoneForm").focus()
+  }
 
-  const handleSubmit = (e) => {
+  handleSubmit = (e) => {
     e.preventDefault() //This is important, i'm not sure why, but the email won't send without it
 
     emailjs
@@ -47,85 +39,87 @@ const Header = () => {
         }
       )
   }
+  render() {
+    return (
+      <HeaderWrapper id="top">
+        <Container>
+          <Flex>
+            <HeaderTextGroup>
+              <Subtitle>La Néobanque du Futur</Subtitle>
+              <h1 style={{ fontFamily: "HK Grotesk Extra Bold" }}>
+                Néobanque pour les Entreprises.
+              </h1>
+              <h5>
+                <Row gutter={8}>
+                  <Col>
+                    <CheckOutlined style={{ color: "green" }} />
+                  </Col>
+                  <Col>
+                    <span>Ouverture en 10 minutes, 100% en ligne.</span>
+                  </Col>
+                </Row>
+                <Row gutter={8}>
+                  <Col>
+                    <CheckOutlined style={{ color: "green" }} />
+                  </Col>
+                  <Col>
+                    <span>Service client 7j/7.</span>
+                  </Col>
+                </Row>
+                <Row gutter={8}>
+                  <Col>
+                    <CheckOutlined style={{ color: "green" }} />
+                  </Col>
+                  <Col>
+                    <span>IBAN FR, cartes physiques et virtuelles.</span>
+                  </Col>
+                </Row>
+              </h5>
 
-  return (
-    <HeaderWrapper id="top">
-      <Container>
-        <Flex>
-          <HeaderTextGroup>
-            <Subtitle>La Néobanque du Futur</Subtitle>
-            <h1 style={{ fontFamily: "HK Grotesk Extra Bold" }}>
-              Néobanque pour les Entreprises.
-            </h1>
-            <h5>
-              <Row gutter={8}>
-                <Col>
-                  <CheckOutlined style={{ color: "green" }} />
-                </Col>
-                <Col>
-                  <span>Ouverture en 10 minutes, 100% en ligne.</span>
-                </Col>
-              </Row>
-              <Row gutter={8}>
-                <Col>
-                  <CheckOutlined style={{ color: "green" }} />
-                </Col>
-                <Col>
-                  <span>Service client 7j/7.</span>
-                </Col>
-              </Row>
-              <Row gutter={8}>
-                <Col>
-                  <CheckOutlined style={{ color: "green" }} />
-                </Col>
-                <Col>
-                  <span>IBAN FR, cartes physiques et virtuelles.</span>
-                </Col>
-              </Row>
-            </h5>
-
-            <h4 style={{ marginTop: "7%", fontSize: "20px" }}>
-              Inscrivez-vous maintenant et bénéficiez de -50% à vie.
-            </h4>
-            <HeaderForm
-              onSubmit={handleSubmit}
-              style={{ marginTop: "3%" }}
-              id="open-account"
-            >
-              <HeaderInput
-                placeholder="Numéro de téléphone"
-                name="phone_number"
-                type="tel"
-                pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}|[0-9]{10}"
-              />
-              <HeaderButton>Pré-inscription</HeaderButton>
-            </HeaderForm>
-            <FormSubtitle>Sortie prévue décembre 2020.</FormSubtitle>
-          </HeaderTextGroup>
-          <ImageWrapper>
-            <div className="dashboard">
-              <img
-                src={Dashboard}
+              <h4 style={{ marginTop: "7%", fontSize: "20px" }}>
+                Inscrivez-vous maintenant et bénéficiez de -50% à vie.
+              </h4>
+              <HeaderForm
+                onSubmit={this.handleSubmit}
+                style={{ marginTop: "3%" }}
+                id="open-account"
+              >
+                <HeaderInput
+                  id="phoneForm"
+                  placeholder="Numéro de téléphone"
+                  name="phone_number"
+                  type="tel"
+                  pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}|[0-9]{10}"
+                />
+                <HeaderButton>Pré-inscription</HeaderButton>
+              </HeaderForm>
+              <FormSubtitle>Sortie prévue décembre 2020.</FormSubtitle>
+            </HeaderTextGroup>
+            <ImageWrapper>
+              <div className="dashboard">
+                <img
+                  src={Dashboard}
+                  alt=""
+                  className="resizeImg"
+                  width="130%"
+                  style={{
+                    objectFit: "scale-down",
+                  }}
+                />
+              </div>
+              <StyledImage
+                className="headerImg"
+                // fluid={iPhone}
+                src={iPhone}
                 alt=""
-                className="resizeImg"
-                width="130%"
-                style={{
-                  objectFit: "scale-down",
-                }}
               />
-            </div>
-            <StyledImage
-              className="headerImg"
-              // fluid={iPhone}
-              src={iPhone}
-              alt=""
-            />
-            <br />
-          </ImageWrapper>
-        </Flex>
-      </Container>
-    </HeaderWrapper>
-  )
+              <br />
+            </ImageWrapper>
+          </Flex>
+        </Container>
+      </HeaderWrapper>
+    )
+  }
 }
 
 export default Header

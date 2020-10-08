@@ -55,6 +55,10 @@ export default class Navigation extends Component {
     </AnchorLink>
   )
 
+  focusForm = () => {
+    document.getElementById("phoneForm").focus()
+  }
+
   getNavList = ({ mobile = false }) => (
     <NavListWrapper mobile={mobile}>
       <Scrollspy
@@ -103,6 +107,7 @@ export default class Navigation extends Component {
                 style={{
                   fontFamily: "HK Grotesk Semibold",
                 }}
+                onClick={this.focusForm}
               >
                 Pré-inscription
               </button>

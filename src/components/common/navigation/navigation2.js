@@ -95,7 +95,7 @@ export default class Navigation2 extends Component {
 
           <Mobile hide>{this.getNavList({})}</Mobile>
           <ActionsContainer>
-            <AnchorLink href="#top">
+            <Link to="/#top">
               <button
                 style={{
                   fontFamily: "HK Grotesk Semibold",
@@ -103,7 +103,7 @@ export default class Navigation2 extends Component {
               >
                 Pré-inscription
               </button>
-            </AnchorLink>
+            </Link>
           </ActionsContainer>
         </StyledContainer>
         <Mobile>
