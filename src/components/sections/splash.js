@@ -20,7 +20,7 @@ const Splash = () => {
                 <Subtitle
                   style={{
                     paddingTop: "5%",
-                    paddingLeft: "10%",
+                    // paddingLeft: "10%",
                   }}
                 >
                   Comme une banque, mais en mieux.
@@ -29,8 +29,8 @@ const Splash = () => {
                   style={{
                     marginBottom: "60px",
                     color: "white",
-                    paddingLeft: "10%",
                   }}
+                  className="h3Title"
                 >
                   Nous avons tout ce que vous avez besoin.
                 </h3>
@@ -114,6 +114,11 @@ const Subtitle = styled.h5`
   color: white;
   letter-spacing: 0px;
   margin-bottom: 16px;
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 `
 
 const FeatureText = styled.h5`
@@ -121,8 +126,12 @@ const FeatureText = styled.h5`
   color: white;
   font-weight: 500;
   margin-bottom: 30px;
-  margin-left: 10%;
   width: 65%;
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 `
 
 const SplashTextGroup = styled.div`

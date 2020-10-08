@@ -214,13 +214,22 @@ const GlobalStyles = createGlobalStyle`
     padding-top: 60px!important;
     padding-right: 0px!important;
     padding-bottom: 5%;
+    padding-left: 5%;
     width: 100%;
   }
 
   @media (max-width: ${(props) => props.theme.screen.sm}) {
 
     .blueBlock {
-      width: 95%;
+      padding-left: 3%;
+      width: 95% !important;
+    }
+
+    .h3Title{
+
+    width: 85%;
+    margin-left: 2%;
+
     }
 
     .dashboard {
