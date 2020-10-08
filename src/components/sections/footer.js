@@ -5,17 +5,18 @@ import { Container } from "../global"
 
 import GPlay from "../../images/gplay.png"
 import AStore from "../../images/appstore.png"
+import { Link } from "gatsby"
 
 const Footer = () => (
   <FooterWrapper id="footer">
     <FooterColumnContainer>
       <FooterColumn>
         <ul>
-          <li>
+          {/* <li>
             <a href="#">
               <ImageStore src={GPlay} alt="PlayStore"></ImageStore>
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="#">
               <ImageStore src={AStore} alt="Apple Store"></ImageStore>
@@ -78,19 +79,19 @@ const Footer = () => (
         <span>À propos</span>
         <ul>
           <li>
-            <a href="#" className="footer-links">
+            <Link to="/privacy" className="footer-links">
               Confidentialité
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="footer-links">
+            <Link to="/legacy" className="footer-links">
               Mentions Légales
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="footer-links">
+            <Link to="/terms" className="footer-links">
               Conditions générales
-            </a>
+            </Link>
           </li>
         </ul>
       </FooterColumn>

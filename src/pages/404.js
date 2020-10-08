@@ -22,7 +22,7 @@ const NotFoundPage = () => (
         }}
       >
         <a href="/" style={{ color: "black" }}>
-          Klark
+          Retour
         </a>
       </h3>
     </center>

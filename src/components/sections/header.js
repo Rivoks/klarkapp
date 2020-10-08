@@ -8,6 +8,7 @@ import { CheckOutlined } from "@ant-design/icons"
 import emailjs from "emailjs-com"
 
 import Dashboard from "../../images/Dashboard.png"
+import iPhone from "../../images/iphone.svg"
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -102,11 +103,6 @@ const Header = () => {
             <FormSubtitle>Sortie prévue décembre 2020.</FormSubtitle>
           </HeaderTextGroup>
           <ImageWrapper>
-            <StyledImage
-              className="headerImg"
-              fluid={data.file.childImageSharp.fluid}
-            />
-            <br />
             <div className="dashboard">
               <img
                 src={Dashboard}
@@ -118,6 +114,13 @@ const Header = () => {
                 }}
               />
             </div>
+            <StyledImage
+              className="headerImg"
+              // fluid={iPhone}
+              src={iPhone}
+              alt=""
+            />
+            <br />
           </ImageWrapper>
         </Flex>
       </Container>
@@ -266,13 +269,12 @@ const ImageWrapper = styled.div`
   }
 `
 
-const StyledImage = styled(Img)`
-  width: 500px;
+const StyledImage = styled.img`
+  width: 300px;
   @media (max-width: ${(props) => props.theme.screen.md}) {
-    width: 400px;
+    width: 200px;
   }
   @media (max-width: ${(props) => props.theme.screen.sm}) {
-    width: 300px;
-    ${"" /* display: none; */}
+    width: 200px;
   }
 `

@@ -143,6 +143,9 @@ const GlobalStyles = createGlobalStyle`
     -webkit-animation: MoveUpDown 1s infinite  alternate;
     animation: MoveUpDown 1s infinite alternate;
     z-index: 99;
+    position: relative;
+
+
   }
 
   @keyframes MoveUpDown {
@@ -241,6 +244,7 @@ const GlobalStyles = createGlobalStyle`
       height: 500px;
       border-radius: 25px;
     }
+
 
     .faqTitle{
     font-size: 18px;
