@@ -12,18 +12,26 @@ import Entreprise from "../components/sections/entreprise"
 import Faq from "../components/sections/faq"
 import Splash from "../components/sections/splash"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO />
-    <Navigation />
-    <Header />
-    <Features />
-    <GetStarted />
-    <Entreprise />
-    <Splash />
-    <Faq />
-    <Footer />
-  </Layout>
-)
+const IndexPage = () => {
+  {
+    /* <script type="text/javascript">
+        document.getElementsByTagName("title")[0].innerHTML = "La banque en
+        ligne pour les pros"
+      </script> */
+  }
+  return (
+    <Layout>
+      <SEO title="Klark" />
+      <Navigation />
+      <Header />
+      <Features />
+      <GetStarted />
+      <Entreprise />
+      <Splash />
+      <Faq />
+      <Footer />
+    </Layout>
+  )
+}
 
 export default IndexPage

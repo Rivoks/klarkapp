@@ -4,9 +4,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Klark`,
-    description: `La néobanque du futur`,
+    title: `La banque en ligne pour les pros`,
+    description: `Klark, la néobanque pour les entreprises. Ouverture en 10 minutes, 100% en ligne. Service client 7j/7. IBAN FR, cartes physiques et virtuelles. Inscrivez-vous maintenant et bénéficiez de -50% à vie !`,
     author: `Klark`,
+    siteUrl: `https://www.klark.app`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -45,6 +46,8 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
