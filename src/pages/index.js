@@ -13,12 +13,7 @@ import Faq from "../components/sections/faq"
 import Splash from "../components/sections/splash"
 
 const IndexPage = () => {
-  {
-    /* <script type="text/javascript">
-        document.getElementsByTagName("title")[0].innerHTML = "La banque en
-        ligne pour les pros"
-      </script> */
-  }
+
   return (
     <Layout>
       <SEO title="Klark" />
