@@ -35,7 +35,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:image`,
-          content: image,
+          content: "../../../images/icon.png",
         },
         {
           property: `og:url`,
@@ -63,7 +63,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:image`,
-          content: image,
+          content: "../../../images/icon.png",
         },
         {
           name: `twitter:creator`,
