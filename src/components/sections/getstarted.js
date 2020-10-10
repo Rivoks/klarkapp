@@ -10,12 +10,12 @@ const GetStarted = () => (
   <StyledSection id="klark">
     <GetStartedContainer>
       <GetStartedTitle>
-        Inscrivez-vous maintenant et bénéficiez de -50% à vie.
+        0.5% remboursées sur toutes vos dépenses<br/> avec la carte Klark.
       </GetStartedTitle>
       <AnchorLink href="#top">
         <TryItButton>Pré-inscription</TryItButton>
       </AnchorLink>
-      <Subtitle>Sortie prévue décembre 2020.</Subtitle>
+      <Subtitle>Inscrivez-vous maintenant et profitez de -50% à vie.</Subtitle>
     </GetStartedContainer>
   </StyledSection>
 )
@@ -39,6 +39,7 @@ const GetStartedContainer = styled(Container)`
 const GetStartedTitle = styled.h3`
   margin: 0 auto 32px;
   text-align: center;
+  line-height: 60px;
 `
 
 const TryItButton = styled.button`

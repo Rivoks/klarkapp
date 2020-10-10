@@ -133,26 +133,27 @@ const Entreprise = () => {
                     9,99€
                     <span className="per-month"> / mois HT</span>
                   </h3>
-                  <h5 style={{ color: "#95a5a6" }}>(Au lieu de 119,88€)</h5>
+                  {/* <h5 style={{ color: "#95a5a6" }}>(Au lieu de 119,88€/an)</h5> */}
                   <p
                     style={{
-                      color: "#455980",
+                      color: "#69CC00",
                       fontSize: "14px",
                       lineHeight: "23px",
                     }}
                   >
-                    Réservé aux auto-entrepreneurs, micro-entreprises qui
-                    débutent.
+                    Économisez 119,88€ / an en vous inscrivant dès maintenant.
+
                   </p>
                   <Divider orientation="center"></Divider>
                 </center>
                 <FeatureRow>20 virements et prélèvements SEPA</FeatureRow>
                 <FeatureRow>1 carte physique </FeatureRow>
-                <FeatureRow>Cartes virtuelles en option</FeatureRow>
+                <FeatureRow>1 carte virtuelle </FeatureRow>
                 <FeatureRow>1 compte utilisateur</FeatureRow>
                 <FeatureRow>IBAN Français </FeatureRow>
                 <FeatureRow>Limites de retrait 1000,00 € </FeatureRow>
-                <FeatureRow>Support 7 jours/7 </FeatureRow>
+                <FeatureRow>0.1% cashback par carte</FeatureRow>
+                <FeatureRow>Assistance 7j/7 </FeatureRow>
 
                 <AnchorLink href="#top">
                   <EntrepriseButton>Pré-inscription</EntrepriseButton>
@@ -184,15 +185,16 @@ const Entreprise = () => {
                     19,99€
                     <span className="per-month"> / mois HT</span>
                   </h3>
-                  <h5 style={{ color: "#95a5a6" }}>(Au lieu de 239,88€)</h5>
+                  {/* <h5 style={{ color: "#95a5a6" }}>(Au lieu de 239,88€/an)</h5> */}
                   <p
                     style={{
-                      color: "#455980",
+                      color: "#69CC00",
                       fontSize: "14px",
                       lineHeight: "23px",
                     }}
                   >
-                    La formule la plus populaire pour les entreprises.
+                    Économisez 239,88€ / an en vous inscrivant dès maintenant.
+
                   </p>
                   <Divider orientation="center"></Divider>
                 </center>
@@ -202,7 +204,8 @@ const Entreprise = () => {
                 <FeatureRow>5 comptes utilisateur</FeatureRow>
                 <FeatureRow>IBAN Français </FeatureRow>
                 <FeatureRow>Limites de retrait 1500,00 € </FeatureRow>
-                <FeatureRow>Support 7/7 </FeatureRow>
+                <FeatureRow>0.2% cashback par carte</FeatureRow>
+                <FeatureRow>Assistance 7j/7 </FeatureRow>
                 <FeatureRow>Accès pour votre comptable </FeatureRow>
                 <FeatureRow>Rôles et permissions</FeatureRow>
 
@@ -236,15 +239,15 @@ const Entreprise = () => {
                     79,99€
                     <span className="per-month"> / mois HT</span>
                   </h3>
-                  <h5 style={{ color: "#95a5a6" }}>(Au lieu de 959,88€)</h5>
+                  {/* <h5 style={{ color: "#95a5a6" }}>(Au lieu de 959,88€/an)</h5> */}
                   <p
                     style={{
-                      color: "#455980",
+                      color: "#69CC00",
                       fontSize: "14px",
                       lineHeight: "23px",
                     }}
                   >
-                    Idéal pour les entreprises avec des flux importants.
+                    Économisez 959,88€ / an en vous inscrivant dès maintenant.
                   </p>
                   <Divider orientation="center"></Divider>
                 </center>
@@ -253,8 +256,9 @@ const Entreprise = () => {
                 <FeatureRow>Cartes virtuelles illimités</FeatureRow>
                 <FeatureRow>Comptes utilisateur illimités</FeatureRow>
                 <FeatureRow>IBAN Français </FeatureRow>
-                <FeatureRow>Support 7 jours/7 </FeatureRow>
                 <FeatureRow>Limites de retrait 3000,00 € </FeatureRow>
+                <FeatureRow>0.5% cashback par carte</FeatureRow>
+                <FeatureRow>Assistance 7j/7 </FeatureRow>
                 <FeatureRow>Accès pour votre comptable </FeatureRow>
                 <FeatureRow>Rôles et permissions</FeatureRow>
                 <FeatureRow>Support client prioritaire</FeatureRow>

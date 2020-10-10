@@ -118,8 +118,8 @@ const GlobalStyles = createGlobalStyle`
     background-color: white;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 7%;
+    padding-left: 8%;
     margin-bottom: 5%;
     height: 910px;
   }
@@ -216,9 +216,14 @@ const GlobalStyles = createGlobalStyle`
     border-radius: 25px;
     padding-top: 60px!important;
     padding-right: 0px!important;
-    padding-bottom: 5%;
-    padding-left: 5%;
+    padding-bottom: 5%!important;
+    padding-left: 5%!important;
     width: 100%;
+  }
+
+  .featureSplash {
+    width: 100%!important;
+    margin-bottom: 10%!important;
   }
 
   @media (max-width: ${(props) => props.theme.screen.sm}) {
