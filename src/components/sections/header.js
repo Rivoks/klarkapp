@@ -89,6 +89,7 @@ class Header extends React.Component {
                   name="phone_number"
                   type="tel"
                   pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}|[0-9]{10}"
+                  required
                 />
                 <HeaderButton>Pré-inscription</HeaderButton>
               </HeaderForm>
