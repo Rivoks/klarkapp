@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { Row, Col, message, Button, Space } from "antd"
+import { Row, Col, message, Modal, Select, Button } from "antd"
 import { Container } from "../global"
 import { CheckOutlined } from "@ant-design/icons"
 import emailjs from "emailjs-com"
@@ -9,12 +9,17 @@ import emailjs from "emailjs-com"
 import Dashboard from "../../images/Dashboard.png"
 import iPhone from "../../images/iphone.svg"
 
+const { Option } = Select;
+
 class Header extends React.Component {
 
 constructor(props) {
     super(props)
     this.state ={
-    inputValue : '',
+      inputValue: '',
+      visible: false,
+      value1: 'Premium',
+      value2: 'SAS',
     }
     this.handleChange = this.handleChange.bind( this );
     this.handleSubmit = this.handleSubmit.bind( this );
@@ -28,35 +33,77 @@ constructor(props) {
     e.preventDefault() 
 
     emailjs
-      .sendForm(
-        "service_klark1",
+      //   .sendForm(
+      //     "service_klark1",
+      //     "template_pgc21ve",
+      //     e.target,
+      //     "user_8ayg8CTlErK7KugcDtbmo"
+      // )
+      
+      .send("service_klark1",
         "template_pgc21ve",
-        e.target,
+        {
+          "numero": this.state.inputValue,
+          "plan": this.state.value1,
+          "entreprise": this.state.value2,
+        },
         "user_8ayg8CTlErK7KugcDtbmo"
-      ).then(() => this.setState({
-            inputValue: ' '
-            })).then(
+      )
+      .then(() => this.setState({
+        inputValue: ' ',
+        visible: false,
+      })).then(
         (result) => {
           message
             .success(
               "Votre pré-inscription a bien été prise en compte. Merci !",
               3
             )
-            .then(this.inputRef.focus())
         },
         (error) => {
           console.log(error.text)
         }
-      )
+      ).then(this.inputRef.focus());
+    
   }
 
   handleChange = (e) => {
         this.setState({
             inputValue: e.target.value
         });
-    }
+  }
+  
+  showModal = (e) => {
+    e.preventDefault();
+    this.setState({
+      visible: true,
+    });
+  };
+
+  handleOk = e => {
+    console.log(e);
+    this.setState({
+      visible: false,
+    });
+  };
+
+  handleCancel = () => {
+    this.setState({
+      visible: false,
+    });
+    console.log(this.state.value1);
+    console.log(this.state.value2);
+  };
+
+  handleChangeSelect1 = value => {
+    this.setState({ value1: value });
+  }
+  handleChangeSelect2 = value => {
+    this.setState({ value2: value });
+  }
 
   render() {
+
     return (
       <HeaderWrapper id="top">
         <Container>
@@ -97,7 +144,7 @@ constructor(props) {
                 Inscrivez-vous maintenant et bénéficiez de -50% à vie.
               </h4>
               <HeaderForm
-                onSubmit={this.handleSubmit}
+                onSubmit={this.showModal}
                 style={{ marginTop: "3%" }}
                 id="open-account"
               >
@@ -115,6 +162,29 @@ constructor(props) {
                 <HeaderButton>Pré-inscription</HeaderButton>
               </HeaderForm>
               <FormSubtitle>Sortie prévue décembre 2020.</FormSubtitle>
+              <Modal
+                title="Pré-inscription"
+                visible={this.state.visible}
+                onCancel={this.handleCancel}
+                onOk={this.handleSubmit}
+                afterClose={()=>this.inputRef.focus()}
+              >
+                <p><b>Numéro de téléphone :</b> {this.state.inputValue}</p>
+                <p><b>Plan :</b></p>
+                <Select defaultValue="🦅 • Premium" style={{ width: "100%", marginBottom: "20px"}} onChange={this.handleChangeSelect1}>
+                  <Option value="Solo">🐤 • Solo</Option>
+                  <Option value="Standard">🕊 • Standard</Option>
+                  <Option value="Premium">🦅 • Premium</Option>
+                </Select>
+                <p><b>Type d'entreprise :</b></p>
+                <Select defaultValue="SAS" style={{ width: "100%", marginBottom: "20px"}} onChange={this.handleChangeSelect2}>
+                  <Option value="EI">EI</Option>
+                  <Option value="EURL">EURL</Option>
+                  <Option value="SAS">SAS</Option>
+                  <Option value="SARL">SARL</Option>
+                  <Option value="SA">SA</Option>
+                  </Select>
+              </Modal>
             </HeaderTextGroup>
             <ImageWrapper>
               <div className="dashboard">
