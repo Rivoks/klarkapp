@@ -45,7 +45,7 @@ const Features = () => (
           <FeatureTitle>
             <img src={messageEmoji} alt="" className="emoji" />
           </FeatureTitle>
-          <FeatureTitle>Assisstance 24/7</FeatureTitle>
+          <FeatureTitle>Assistance 24/7</FeatureTitle>
           <FeatureText>
             Parlez à des experts compétents basés en France.
           </FeatureText>

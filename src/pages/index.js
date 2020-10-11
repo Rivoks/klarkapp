@@ -1,4 +1,7 @@
 import React from "react"
+import ReactPixel from 'react-facebook-pixel';
+import ReactGA from 'react-ga'
+
 
 import Layout from "../components/common/layout/layout"
 import SEO from "../components/common/layout/seo"
@@ -11,6 +14,18 @@ import GetStarted from "../components/sections/getstarted"
 import Entreprise from "../components/sections/entreprise"
 import Faq from "../components/sections/faq"
 import Splash from "../components/sections/splash"
+ 
+const advancedMatching = { em: 'elias@klark.app' }
+const options = {
+  autoConfig: true, 
+  debug: false,
+};
+ReactPixel.init('326698568627198', advancedMatching, options);
+ 
+ReactPixel.pageView(); 
+
+ReactGA.initialize('G-HMDQ0W9P6M');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const IndexPage = () => {
 

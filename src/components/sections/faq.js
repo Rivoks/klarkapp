@@ -11,7 +11,7 @@ const Faq = () => (
     <GetStartedContainer>
       <Subtitle>FAQ</Subtitle>
       <GetStartedTitle>
-        Vous avez des questions, nous y répondons.
+        Questions les plus fréquentes
       </GetStartedTitle>
     </GetStartedContainer>
     <Container>
