@@ -99,7 +99,7 @@ const Footer = () => (
     </FooterColumnContainer>
     <Container style={{ marginTop: '7%' }}>
         <small>
-        Klark est un établissement de monnaie électronique agréé par le Financial Conduct Authority (FCA) en tant que agent de CashFlows dont le numéro d’agrément est le 900006 et qui lui même est une institution de monnaie électronique en vertu du Electronic Money Regulations 2011. La carte Klark est une carte bancaire Mastercard émise par ClashFlows sous licence de Mastercard International. Mastercard est une marque déposée de Mastercard International Inc.
+        Klark est un établissement de monnaie électronique agréé par le Financial Conduct Authority (FCA) en tant qu'agent de CashFlows dont le numéro d’agrément est le 900006 et qui lui même est une institution de monnaie électronique en vertu du Electronic Money Regulations 2011. La carte Klark est une carte bancaire Mastercard émise par ClashFlows sous licence de Mastercard International. Mastercard est une marque déposée de Mastercard International Inc.
         </small>
     </Container>
   </FooterWrapper>

@@ -40,6 +40,10 @@ const GetStartedContainer = styled(Container)`
 const GetStartedTitle = styled.h3`
   margin: 0 auto 32px;
   text-align: center;
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 `
 
 const TryItButton = styled.button`
