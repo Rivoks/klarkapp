@@ -128,7 +128,7 @@ const Entreprise = () => {
                     className="emojiPricing"
                     height="50px"
                   />
-                  <h2 style={{ fontSize: "24px" }}>Solo</h2>
+                  <FeatureTitle>Solo</FeatureTitle>
                   <h3 style={{ fontWeight: "extrabold" }}>
                     9,99€
                     <span className="per-month"> / mois HT</span>
@@ -180,7 +180,7 @@ const Entreprise = () => {
                     className="emojiPricing"
                     height="50px"
                   />
-                  <h2 style={{ fontSize: "24px" }}>Standard</h2>
+                  <FeatureTitle>Standard</FeatureTitle>
                   <h3 style={{ fontWeight: "extrabold" }}>
                     19,99€
                     <span className="per-month"> / mois HT</span>
@@ -234,7 +234,7 @@ const Entreprise = () => {
                     className="emojiPricing"
                     height="50px"
                   />
-                  <h2 style={{ fontSize: "24px" }}>Premium</h2>
+                  <FeatureTitle>Premium</FeatureTitle>
                   <h3 style={{ fontWeight: "extrabold" }}>
                     79,99€
                     <span className="per-month"> / mois HT</span>
@@ -289,7 +289,7 @@ const Entreprise = () => {
                     className="emojiPricing"
                     height="50px"
                   />
-                  <h2 style={{ fontSize: "24px" }}>Corporate</h2>
+                  <FeatureTitle>Corporate</FeatureTitle>
                   <h3 style={{ fontWeight: "extrabold", fontSize: "34px" }}>
                     Sur demande
                   </h3>
@@ -501,8 +501,14 @@ const EntrepriseForm = styled.form`
 
 const FeatureRow = styled.p`
   font-size: 14px;
-  font-weight: 300;
+  font-weight: bold;
   text-align: left;
+`
+
+const FeatureTitle = styled.h2`
+  font-size: 24px;
+  font-family: ${(props) => props.theme.font.bold};
+  text-align: center;
 `
 
 const FormSubtitle = styled.span`
