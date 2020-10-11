@@ -128,7 +128,7 @@ const Entreprise = () => {
                     className="emojiPricing"
                     height="50px"
                   />
-                  <h2 style={{ fontSize: "24px" }}>Free</h2>
+                  <h2 style={{ fontSize: "24px" }}>Solo</h2>
                   <h3 style={{ fontWeight: "extrabold" }}>
                     9,99€
                     <span className="per-month"> / mois HT</span>

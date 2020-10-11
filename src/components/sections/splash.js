@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Container } from "../global"
-import { Row, Col, Divider } from "antd"
+import { Row, Col } from "antd"
 import "../../../src/styles/GlobalStyles"
 import SplashImg from "../../images/splash.png"
 import Transaction from "../../images/bell-emoji.png"
@@ -166,53 +166,5 @@ const SplashTextGroup = styled.div`
 
   p {
     margin-bottom: 48px;
-  }
-`
-
-const SplashForm = styled.form`
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 16px;
-
-  @media (max-width: ${(props) => props.theme.screen.sm}) {
-    flex-direction: column;
-  }
-`
-
-const FeatureRow = styled.p`
-  font-size: 14px;
-  font-weight: 300;
-  text-align: left;
-`
-
-const SplashButton = styled.button`
-  font-family: "HK Grotesk Semibold";
-  font-size: 14px;
-  color: white;
-  letter-spacing: 1px;
-  height: 40px;
-  display: block;
-  position: absolute;
-  bottom: 70px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  text-transform: uppercase;
-  cursor: pointer;
-  white-space: nowrap;
-  background: ${(props) => props.theme.color.secondary};
-  border-radius: 4px;
-  padding: 0px 10%;
-  border-width: 0px;
-  border-style: initial;
-  border-color: initial;
-  border-image: initial;
-  outline: 0px;
-  &:hover {
-    box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
-  }
-  @media (max-width: ${(props) => props.theme.screen.md}) {
-  }
-  @media (max-width: ${(props) => props.theme.screen.sm}) {
-    margin-left: 0;
   }
 `

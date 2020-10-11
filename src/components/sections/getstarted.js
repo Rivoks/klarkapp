@@ -34,12 +34,12 @@ const GetStartedContainer = styled(Container)`
   align-items: center;
   flex-direction: column;
   padding: 80px 0 40px;
+
 `
 
 const GetStartedTitle = styled.h3`
   margin: 0 auto 32px;
   text-align: center;
-  line-height: 60px;
 `
 
 const TryItButton = styled.button`
