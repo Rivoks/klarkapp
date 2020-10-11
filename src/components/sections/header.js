@@ -10,6 +10,16 @@ import Dashboard from "../../images/Dashboard.png"
 import iPhone from "../../images/iphone.svg"
 
 class Header extends React.Component {
+
+constructor(props) {
+    super(props)
+    this.state ={
+    inputValue : '',
+    }
+    this.handleChange = this.handleChange.bind( this );
+    this.handleSubmit = this.handleSubmit.bind( this );
+}
+  
   componentDidMount() {
     document.getElementById("phoneForm").focus()
   }
@@ -23,21 +33,29 @@ class Header extends React.Component {
         "template_pgc21ve",
         e.target,
         "user_8ayg8CTlErK7KugcDtbmo"
-      )
-      .then(
+      ).then(() => this.setState({
+            inputValue: ' '
+            })).then(
         (result) => {
           message
             .success(
               "Votre pré-inscription a bien été prise en compte. Merci !",
               3
             )
-            
+            .then(this.inputRef.focus())
         },
         (error) => {
           console.log(error.text)
         }
       )
   }
+
+  handleChange = (e) => {
+        this.setState({
+            inputValue: e.target.value
+        });
+    }
+
   render() {
     return (
       <HeaderWrapper id="top">
@@ -84,11 +102,14 @@ class Header extends React.Component {
                 id="open-account"
               >
                 <HeaderInput
+                  ref={inputRef => this.inputRef = inputRef }
                   id="phoneForm"
                   placeholder="Numéro de téléphone"
                   name="phone_number"
                   type="tel"
                   pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}|[0-9]{10}"
+                  value={this.state.inputValue}
+                  onChange={this.handleChange}
                   required
                 />
                 <HeaderButton>Pré-inscription</HeaderButton>
