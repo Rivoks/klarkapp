@@ -57,7 +57,7 @@ const Splash = () => {
                     <Col span={4}>
                       <img src={bagEmoji} alt="" style={{ height: "40px", marginTop:"6px" }} />
                     </Col>
-                    <Col span={20}>0.5% remboursées sur toutes les dépenses <br/>par carte.</Col>
+                    <Col span={20}>0.5% remboursées sur toutes les dépenses par carte.</Col>
                   </Row>
 
                   <Row className="featureSplash">
