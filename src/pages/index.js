@@ -1,5 +1,5 @@
 import React from "react"
-import ReactPixel from 'react-facebook-pixel';
+// import ReactPixel from 'react-facebook-pixel';
 import ReactGA from 'react-ga'
 
 
@@ -15,17 +15,17 @@ import Entreprise from "../components/sections/entreprise"
 import Faq from "../components/sections/faq"
 import Splash from "../components/sections/splash"
  
-const advancedMatching = { em: 'elias@klark.app' }
-const options = {
-  autoConfig: true, 
-  debug: false,
-};
-ReactPixel.init('326698568627198', advancedMatching, options);
+// const advancedMatching = { em: 'elias@klark.app' }
+// const options = {
+//   autoConfig: true, 
+//   debug: false,
+// };
+// ReactPixel.init('326698568627198', advancedMatching, options);
  
-ReactPixel.pageView(); 
+// ReactPixel.pageView(); 
 
-ReactGA.initialize('G-HMDQ0W9P6M');
-ReactGA.pageview(window.location.pathname + window.location.search);
+// ReactGA.initialize('G-HMDQ0W9P6M');
+// ReactGA.pageview(window.location.pathname + window.location.search);
 
 const IndexPage = () => {
 

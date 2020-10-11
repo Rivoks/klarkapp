@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { graphql, useStaticQuery, Link } from "gatsby"
-import Img from "gatsby-image"
+import { Link } from "gatsby"
 import { Row, Col, message, Button, Space } from "antd"
 import { Container } from "../global"
 import { CheckOutlined } from "@ant-design/icons"
@@ -16,7 +15,7 @@ class Header extends React.Component {
   }
 
   handleSubmit = (e) => {
-    e.preventDefault() //This is important, i'm not sure why, but the email won't send without it
+    e.preventDefault() 
 
     emailjs
       .sendForm(
