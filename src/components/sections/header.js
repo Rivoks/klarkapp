@@ -31,7 +31,7 @@ class Header extends React.Component {
               "Votre pré-inscription a bien été prise en compte. Merci !",
               3
             )
-            .then(() => window.location.reload())
+            
         },
         (error) => {
           console.log(error.text)
