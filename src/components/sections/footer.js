@@ -94,13 +94,14 @@ const Footer = () => (
             </Link>
           </li>
         </ul>
+        
       </FooterColumn>
     </FooterColumnContainer>
-    {/* <BrandContainer>
-      <Logo>
-        <a href="#top">Klark</a>
-      </Logo>
-    </BrandContainer> */}
+    <Container style={{ marginTop: '7%' }}>
+        <small>
+        Klark est un établissement de monnaie électronique agréé par le Financial Conduct Authority (FCA) en tant que agent de CashFlows dont le numéro d’agrément est le 900006 et qui lui même est une institution de monnaie électronique en vertu du Electronic Money Regulations 2011. La carte Klark est une carte bancaire Mastercard émise par ClashFlows sous licence de Mastercard International. Mastercard est une marque déposée de Mastercard International Inc.
+        </small>
+    </Container>
   </FooterWrapper>
 )
 
@@ -114,31 +115,6 @@ const ImageStore = styled.img`
   width: 150px;
 `
 
-const Logo = styled.div`
-  font-family: ${(props) => props.theme.font.extrabold};
-  ${(props) => props.theme.font_size.regular};
-  color: ${(props) => props.theme.color.black.regular};
-  text-decoration: none;
-  letter-spacing: 1px;
-  margin: 0;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 9;
-  text-decoration: none;
-  outline: 0px;
-`
-
-const BrandContainer = styled(Container)`
-  position: relative;
-  padding-top: 48px;
-  display: flex;
-  align-items: flex-end;
-
-  @media (max-width: ${(props) => props.theme.screen.sm}) {
-  }
-`
 const FooterColumnContainer = styled(Container)`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
