@@ -15,12 +15,10 @@ import Faq from "../components/sections/faq"
 import Splash from "../components/sections/splash"
 
 
+
 class IndexPage extends Component {
   componentDidMount() {
     ReactGA.initialize('G-HMDQ0W9P6M');
-    ReactGA.set({
-      userId: auth.currentUserId(),
-    })
     ReactGA.pageview(window.location.pathname + window.location.search);
 
     // <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMDQ0W9P6M"></script>
