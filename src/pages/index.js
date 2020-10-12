@@ -14,27 +14,22 @@ import Entreprise from "../components/sections/entreprise"
 import Faq from "../components/sections/faq"
 import Splash from "../components/sections/splash"
 
-// const advancedMatching = { em: 'elias@klark.app' }
-// const options = {
-//   autoConfig: true,
-//   debug: false,
-// };
-// ReactPixel.init('326698568627198', advancedMatching, options);
-
-// ReactPixel.pageView();
 
 class IndexPage extends Component {
   componentDidMount() {
-    // ReactGA.initialize('G-HMDQ0W9P6M');
-    // ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.initialize('G-HMDQ0W9P6M');
+    ReactGA.set({
+      userId: auth.currentUserId(),
+    })
+    ReactGA.pageview(window.location.pathname + window.location.search);
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMDQ0W9P6M"></script>
+    // <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMDQ0W9P6M"></script>
 
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);}
+    // gtag('js', new Date());
 
-    gtag('config', 'G-HMDQ0W9P6M');
+    // gtag('config', 'G-HMDQ0W9P6M');
 
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?

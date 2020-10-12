@@ -20,6 +20,7 @@ constructor(props) {
       visible: false,
       value1: 'Premium',
       value2: 'SAS',
+      disable: false,
     }
     this.handleChange = this.handleChange.bind( this );
     this.handleSubmit = this.handleSubmit.bind( this );
@@ -31,7 +32,7 @@ constructor(props) {
 
   handleSubmit = (e) => {
     e.preventDefault() 
-
+    this.setState({disable:true})
     emailjs
       //   .sendForm(
       //     "service_klark1",
@@ -167,7 +168,11 @@ constructor(props) {
                 visible={this.state.visible}
                 onCancel={this.handleCancel}
                 onOk={this.handleSubmit}
-                afterClose={()=>this.inputRef.focus()}
+                okButtonProps={{ loading: this.state.disable }}
+                cancelButtonProps={{ disabled: this.state.disable }}
+                afterClose={() => this.inputRef.focus()}
+                okText="Valider"
+                cancelText="Annuler"
               >
                 <p><b>Numéro de téléphone :</b> {this.state.inputValue}</p>
                 <p><b>Plan :</b></p>
