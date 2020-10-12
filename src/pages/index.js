@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 // import ReactPixel from 'react-facebook-pixel';
-import ReactGA from 'react-ga'
-
+import ReactGA from "react-ga"
 
 import Layout from "../components/common/layout/layout"
 import SEO from "../components/common/layout/seo"
@@ -14,33 +13,46 @@ import GetStarted from "../components/sections/getstarted"
 import Entreprise from "../components/sections/entreprise"
 import Faq from "../components/sections/faq"
 import Splash from "../components/sections/splash"
- 
+
 // const advancedMatching = { em: 'elias@klark.app' }
 // const options = {
-//   autoConfig: true, 
+//   autoConfig: true,
 //   debug: false,
 // };
 // ReactPixel.init('326698568627198', advancedMatching, options);
- 
-// ReactPixel.pageView(); 
 
+// ReactPixel.pageView();
 
-
-class IndexPage extends Component{
+class IndexPage extends Component {
   componentDidMount() {
-    ReactGA.initialize('G-HMDQ0W9P6M');
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.initialize("G-HMDQ0W9P6M")
+    ReactGA.pageview(window.location.pathname + window.location.search)
 
-    // !function(f,b,e,v,n,t,s)
-    // {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    // n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    // if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    // n.queue=[];t=b.createElement(e);t.async=!0;
-    // t.src=v;s=b.getElementsByTagName(e)[0];
-    // s.parentNode.insertBefore(t,s)}(window, document,'script',
-    // 'https://connect.facebook.net/en_US/fbevents.js');
-    // fbq('init', '326698568627198');
-    // fbq('track', 'PageView');
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments)
+      }
+      if (!f._fbq) f._fbq = n
+      n.push = n
+      n.loaded = !0
+      n.version = "2.0"
+      n.queue = []
+      t = b.createElement(e)
+      t.async = !0
+      t.src = v
+      s = b.getElementsByTagName(e)[0]
+      s.parentNode.insertBefore(t, s)
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    )
+    fbq("init", "326698568627198")
+    fbq("track", "PageView")
   }
   render() {
     return (
