@@ -183,11 +183,14 @@ constructor(props) {
                 </Select>
                 <p><b>Type d'entreprise :</b></p>
                 <Select defaultValue="SAS" style={{ width: "100%", marginBottom: "20px"}} onChange={this.handleChangeSelect2}>
-                  <Option value="EI">EI</Option>
-                  <Option value="EURL">EURL</Option>
-                  <Option value="SAS">SAS</Option>
-                  <Option value="SARL">SARL</Option>
                   <Option value="SA">SA</Option>
+                  <Option value="SAS">SAS</Option>
+                  <Option value="SASU">SASU</Option>
+                  <Option value="SARL">SARL</Option>
+                  <Option value="EURL">EURL</Option>
+                  <Option value="Profession-libérale">Profession Libérale</Option>
+                  <Option value="Micro-entreprise">Micro-entreprise</Option>
+                  <Option value="Autre">Autre</Option>
                   </Select>
               </Modal>
             </HeaderTextGroup>
