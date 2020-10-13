@@ -18,10 +18,12 @@ import Splash from "../components/sections/splash"
 
 class IndexPage extends Component {
   componentDidMount() {
-    ReactGA.initialize('G-HMDQ0W9P6M');
+    ReactGA.initialize('G-HMDQ0W9P6M', { debug: true });
     ReactGA.pageview(window.location.pathname + window.location.search);
 
     // <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMDQ0W9P6M"></script>
+
+
 
     // window.dataLayer = window.dataLayer || [];
     // function gtag(){dataLayer.push(arguments);}
