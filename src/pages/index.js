@@ -21,15 +21,6 @@ class IndexPage extends Component {
     ReactGA.initialize('G-HMDQ0W9P6M', { debug: true });
     ReactGA.pageview(window.location.pathname + window.location.search);
 
-    // <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMDQ0W9P6M"></script>
-
-
-
-    // window.dataLayer = window.dataLayer || [];
-    // function gtag(){dataLayer.push(arguments);}
-    // gtag('js', new Date());
-
-    // gtag('config', 'G-HMDQ0W9P6M');
 
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
