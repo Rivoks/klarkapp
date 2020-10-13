@@ -38,30 +38,15 @@ class IndexPage extends Component {
   render() {
     return (
       <Layout>
-        {/* <JsonLd
+        <JsonLd
           item={{
             "@context": "https://schema.org",
-            "@type": "Website",
+            "@type": "SoftwareApplication",
             name: "Klark",
             alternateName: "Klark App",
-            alumniOf: {
-              "@type": "Website",
-              name: ["Klark Website"],
-            },
-            knowsAbout: ["Klark Website"],
           }}
-        /> */}
-        <script type='application/ld+json' dangerouslySetInnerHTML={ { __html: `{
-            "@context": "https://schema.org",
-            "@type": "Website",
-            name: "Klark",
-            alternateName: "Klark App",
-            alumniOf: {
-              "@type": "Website",
-              name: ["Klark Website"],
-            },
-            knowsAbout: ["Klark Website"],
-          }`}} />
+        />
+        
         <SEO title="Klark" />
         <Navigation />
         <Header />
