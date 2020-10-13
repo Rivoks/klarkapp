@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-// import ReactPixel from 'react-facebook-pixel';
 import ReactGA from "react-ga"
 
 import Layout from "../components/common/layout/layout"
@@ -13,6 +12,9 @@ import GetStarted from "../components/sections/getstarted"
 import Entreprise from "../components/sections/entreprise"
 import Faq from "../components/sections/faq"
 import Splash from "../components/sections/splash"
+
+
+import { JsonLd } from "react-schemaorg";
 
 
 
@@ -36,6 +38,19 @@ class IndexPage extends Component {
   render() {
     return (
       <Layout>
+        <JsonLd
+          item={{
+            "@context": "https://schema.org",
+            "@type": "Website",
+            name: "Klark",
+            alternateName: "Klark App",
+            alumniOf: {
+              "@type": "Website",
+              name: ["Klark Website"],
+            },
+            knowsAbout: ["Klark Website"],
+          }}
+        />
         <SEO title="Klark" />
         <Navigation />
         <Header />
