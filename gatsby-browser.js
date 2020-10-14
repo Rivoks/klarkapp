@@ -8,7 +8,7 @@
 
 
 import ReactGA from 'react-ga';
-ReactGA.initialize('UA-180544186-1');
+ReactGA.initialize('UA-180544186-1', { debug: true });
 ReactGA.pageview(window.location.href);
 
 // exports.onRouteUpdate = (state) => {
