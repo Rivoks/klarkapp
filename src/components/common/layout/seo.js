@@ -11,7 +11,7 @@ const SEO = ({ description, lang, meta, title }) => {
 
   const setting = {
     color: {
-      theme: "#000"
+      theme: "#0055FF"
     },
     launcher: {
       chatLabel: {
