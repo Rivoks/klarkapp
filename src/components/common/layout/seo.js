@@ -1,9 +1,19 @@
-import React from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import ReactGA from "react-ga"
+
 
 const SEO = ({ description, lang, meta, title }) => {
+
+  useEffect(() => {
+    ReactGA.initialize('UA-180544186-1', { debug: false });
+    ReactGA.pageview(window.location.pathname + window.location.search); 
+  });
+
+
+
   const { site } = useStaticQuery(
     graphql`
       query {

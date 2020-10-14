@@ -1197,21 +1197,6 @@ const Legacy = () => {
           ao&ucirc;t 2018.
         </p>
         <p>&nbsp;</p>
-        <p>
-          Pour une information compl&egrave;te sur le traitement des
-          donn&eacute;es personnelles par Klark et sur les droits des
-          Utilisateurs associ&eacute;s, Klark invite les Utilisateurs &agrave;
-          consulter sa politique de confidentialit&eacute; accessible sur sur
-          son Site, &agrave; partir du lien suivant :{" "}
-          <a href="https://klark.app/wp-content/uploads/2019/11/POLICY-KLARK.pdf">
-            https://klark.app/wp-
-          </a>{" "}
-          <a href="https://klark.app/wp-content/uploads/2019/11/POLICY-KLARK.pdf">
-            content/uploads/2019/11/POLICY-KLARK.pdf,{" "}
-          </a>
-          laquelle pr&eacute;cise notamment :
-        </p>
-        <p>&nbsp;</p>
         <ul>
           <li>
             Les fondements l&eacute;gaux sur lesquels repose la collecte des
