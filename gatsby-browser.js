@@ -5,3 +5,12 @@
  */
 
 // You can delete this file if you're not using it
+
+
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-180544186-1');
+ReactGA.pageview(window.location.href);
+
+// exports.onRouteUpdate = (state) => {
+//   ReactGA.pageview(state.pathname);
+// };
