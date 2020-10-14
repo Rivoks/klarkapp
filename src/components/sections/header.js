@@ -188,9 +188,8 @@ constructor(props) {
                   <Option value="SASU">SASU</Option>
                   <Option value="SARL">SARL</Option>
                   <Option value="EURL">EURL</Option>
-                  <Option value="EURL">SCI</Option>
                   <Option value="Profession-libérale">Profession Libérale</Option>
-                  <Option value="Micro-entreprise">Micro-entreprise</Option>
+                  <Option value="Micro-entreprise">Auto-entrepreneur</Option>
                   <Option value="Autre">Autre</Option>
                   </Select>
               </Modal>

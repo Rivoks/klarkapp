@@ -21,7 +21,8 @@ import { JsonLd } from "react-schemaorg";
 
 class IndexPage extends Component {
   componentDidMount() {
-    ReactGA.initialize('UA-180544186-1', { debug: true });
+
+    ReactGA.initialize('UA-180544186-1', { debug: false });
     ReactGA.pageview(window.location.href + window.location.search);
 
 

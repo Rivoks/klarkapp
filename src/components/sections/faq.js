@@ -33,9 +33,9 @@ const Faq = () => (
               >
                 <p>
                   Klark est accessible à l’ensemble des professionnels et
-                  entreprises : SA, SAS, SASU, SARL, SCI, EURL, professions
-                  libérales et micro-entreprises. Pour le moment, Klark n’est pas
-                  disponible pour les associations.
+                  entreprises : SA, SAS, SASU, SARL, SC, EURL, professions
+                  libérales et auto-entrepreneurs. Pour le moment, Klark n’est pas
+                  disponible pour les associations et les SCI.
                 </p>
               </Panel>
               <Panel
