@@ -11,7 +11,7 @@ import Footer from "../components/sections/footer"
 const Legacy = () => {
   return (
     <Layout>
-      <SEO title="Klark" />
+      <SEO title="Conditions d'utilisation" />
       <Navigation2 />
 
       <Container>

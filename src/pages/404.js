@@ -6,7 +6,7 @@ import SEO from "../components/common/layout/seo"
 const NotFoundPage = () => (
   <Layout>
     <center>
-      <SEO title="404 - Not found" />
+      <SEO title="Erreur 404" />
       <h1 style={{ paddingTop: "40vh" }}>Page introuvable</h1>
       <p>
         Vous venez de prendre un chemin qui n'existe pas... quelle tristesse.

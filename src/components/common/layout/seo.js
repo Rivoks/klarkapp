@@ -13,7 +13,6 @@ const SEO = ({ description, lang, meta, title }) => {
   });
 
 
-
   const { site } = useStaticQuery(
     graphql`
       query {

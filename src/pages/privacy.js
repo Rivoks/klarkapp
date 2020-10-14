@@ -11,7 +11,7 @@ import Footer from "../components/sections/footer"
 const PrivacyPage = () => {
   return (
     <Layout>
-      <SEO title="Klark" />
+      <SEO title="Confidentialité" />
       <Navigation2 />
 
       <Container>
