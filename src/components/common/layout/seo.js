@@ -8,8 +8,9 @@ import ReactGA from "react-ga"
 const SEO = ({ description, lang, meta, title }) => {
 
   useEffect(() => {
-    ReactGA.initialize('UA-180544186-1', { debug: false });
-    ReactGA.pageview(window.location.pathname + window.location.search); 
+    ReactGA.initialize('UA-180544186-1', { debug: true });
+    ReactGA.pageview(window.location.href); 
+    console.log(window.location.href);
   });
 
 
