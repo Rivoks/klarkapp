@@ -23,7 +23,8 @@ class IndexPage extends Component {
   componentDidMount() {
 
     ReactGA.initialize('UA-180544186-1', { debug: false });
-    ReactGA.pageview(window.location.href + window.location.search);
+    // ReactGA.pageview(window.location.href + window.location.search);
+    ReactGA.pageview("https://www.klark.app");
 
 
     !function(f,b,e,v,n,t,s)
