@@ -3,15 +3,54 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import ReactGA from "react-ga"
+import Zendesk from "react-zendesk";
 
 
 const SEO = ({ description, lang, meta, title }) => {
 
-  // useEffect(() => {
-  //   ReactGA.initialize('UA-180544186-1', { debug: true });
-  //   ReactGA.pageview(window.location.href); 
-  //   console.log(window.location.href);
-  // });
+
+  const setting = {
+    color: {
+      theme: "#000"
+    },
+    launcher: {
+      chatLabel: {
+        "en-US": "Need Help"
+      }
+    },
+    contactForm: {
+      fields: [
+        { id: "description", prefill: { "*": "My pre-filled description" } }
+      ]
+    }
+  };
+
+
+  useEffect(() => {
+    ReactGA.initialize('UA-180544186-1', { debug: true, titleCase: false, });
+    ReactGA.ga('set', 'checkProtocolTask', null);
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.href);
+
+    // const script = document.createElement("script");
+    // script.src = "https://static.zdassets.com/ekr/snippet.js?key=7af8bdac-02dc-433b-90b0-6866f6dc6901";
+    // script.async = true;
+    // console.log(script.src);
+
+    // document.body.appendChild(script);
+
+
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '326698568627198');
+    fbq('track', 'PageView');
+  });
 
 
   const { site } = useStaticQuery(
@@ -32,6 +71,7 @@ const SEO = ({ description, lang, meta, title }) => {
 
   return (
     <>
+    <Zendesk zendeskKey={"7af8bdac-02dc-433b-90b0-6866f6dc6901"} {...setting} onLoaded={() => console.log('is loaded')} />
     <Helmet
       htmlAttributes={{
         lang,
