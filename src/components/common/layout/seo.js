@@ -31,6 +31,10 @@ const SEO = ({ description, lang, meta, title }) => {
     ReactGA.ga('set', 'checkProtocolTask', null);
     ReactGA.set({ page: window.location.pathname });
     ReactGA.pageview(window.location.href);
+    ReactGA.event({
+      category: 'User',
+      action: 'Created an Account'
+    });
 
     // const script = document.createElement("script");
     // script.src = "https://static.zdassets.com/ekr/snippet.js?key=7af8bdac-02dc-433b-90b0-6866f6dc6901";
@@ -71,7 +75,7 @@ const SEO = ({ description, lang, meta, title }) => {
 
   return (
     <>
-    <Zendesk zendeskKey={"7af8bdac-02dc-433b-90b0-6866f6dc6901"} {...setting} onLoaded={() => console.log('is loaded')} />
+    <Zendesk zendeskKey={"7af8bdac-02dc-433b-90b0-6866f6dc6901"} {...setting} />
     <Helmet
       htmlAttributes={{
         lang,
