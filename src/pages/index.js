@@ -35,7 +35,7 @@ class IndexPage extends Component {
         <SEO title="Klark" />
         <Navigation />
         <Header />
-        <img src={image} alt="" />
+        {/* <img src={image} alt="" style={{ display: "none" }} /> */}
         <Features />
         <GetStarted />
         <Entreprise />
