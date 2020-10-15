@@ -12,7 +12,7 @@ import Entreprise from "../components/sections/entreprise"
 import Faq from "../components/sections/faq"
 import Splash from "../components/sections/splash"
 
-import image from "../images/icon.png"
+import image from "../images/logo-alt.png"
 
 import { JsonLd } from "react-schemaorg";
 
@@ -35,7 +35,7 @@ class IndexPage extends Component {
         <SEO title="Klark" />
         <Navigation />
         <Header />
-        {/* <img src={image} alt="" style={{ display: "none" }} /> */}
+        {/* <img src={image} alt="image" /> */}
         <Features />
         <GetStarted />
         <Entreprise />

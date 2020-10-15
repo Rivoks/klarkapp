@@ -89,7 +89,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:image`,
-          content: "https://www.klark.app/static/icon-40c0346b765f15c7dad47a174ea51f25.png",
+          content: "https://www.klark.app/static/logo-alt-5b76186870b36c9562fd79d06f796531.png",
         },
         {
           property: `og:url`,
@@ -117,7 +117,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           name: `twitter:image`,
-          content: "https://www.klark.app/static/icon-40c0346b765f15c7dad47a174ea51f25.png",
+          content: "https://www.klark.app/static/logo-alt-5b76186870b36c9562fd79d06f796531.png",
         },
         {
           name: `twitter:creator`,
