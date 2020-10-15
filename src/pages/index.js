@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import ReactGA from "react-ga"
 
 import Layout from "../components/common/layout/layout"
 import SEO from "../components/common/layout/seo"
@@ -12,6 +11,8 @@ import GetStarted from "../components/sections/getstarted"
 import Entreprise from "../components/sections/entreprise"
 import Faq from "../components/sections/faq"
 import Splash from "../components/sections/splash"
+
+import image from "../images/icon.png"
 
 import { JsonLd } from "react-schemaorg";
 
@@ -34,6 +35,7 @@ class IndexPage extends Component {
         <SEO title="Klark" />
         <Navigation />
         <Header />
+        <img src={image} alt="" />
         <Features />
         <GetStarted />
         <Entreprise />
