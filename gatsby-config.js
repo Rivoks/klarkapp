@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Néobanque pour les pro`,
-    description: `Klark, la néobanque pour les entreprises. Ouverture en 10 minutes, 100% en ligne. Service client 7j/7. IBAN FR, cartes physiques et virtuelles.`,
+    description: `Ouverture d'un compte bancaire en 10 minutes, 100% en ligne, sans se déplacer. Arretez de surpayer les banques. Carte MasterCard Business et IBAN FR.`,
     author: `Klark`,
     siteUrl: `https://www.klark.app`,
   },
