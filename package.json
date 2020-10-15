@@ -7,7 +7,11 @@
   "dependencies": {
     "@ant-design/icons": "^4.2.2",
     "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
     "emailjs-com": "^2.6.3",
+    "express": "^4.17.1",
     "gatsby": "^2.24.47",
     "gatsby-image": "^2.4.16",
     "gatsby-plugin-antd": "^2.2.0",
@@ -23,6 +27,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-transformer-sharp": "^2.5.13",
+    "nodemailer": "^6.4.14",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
@@ -38,8 +43,10 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.5",
     "prettier": "^2.1.2"
   },
   "keywords": [
@@ -51,7 +58,8 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "backend": "nodemon index.js",
+    "serve": "concurrently \"npm run backend\"  \"gatsby serve\"",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "repository": {

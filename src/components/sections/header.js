@@ -5,106 +5,101 @@ import { Row, Col, message, Modal, Select, Button } from "antd"
 import { Container } from "../global"
 import { CheckOutlined } from "@ant-design/icons"
 import emailjs from "emailjs-com"
+import axios from "axios"
 
 import Dashboard from "../../images/Dashboard.png"
 import iPhone from "../../images/iphone.svg"
 
-const { Option } = Select;
+const { Option } = Select
 
 class Header extends React.Component {
-
-constructor(props) {
+  constructor(props) {
     super(props)
-    this.state ={
-      inputValue: '',
+    this.state = {
+      inputValue: "",
       visible: false,
-      value1: 'Premium',
-      value2: 'SAS',
+      value1: "Premium",
+      value2: "SAS",
       disable: false,
     }
-    this.handleChange = this.handleChange.bind( this );
-    this.handleSubmit = this.handleSubmit.bind( this );
-}
-  
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
   componentDidMount() {
     document.getElementById("phoneForm").focus()
   }
 
   handleSubmit = (e) => {
-    e.preventDefault() 
-    this.setState({disable:true})
-    emailjs
-      //   .sendForm(
-      //     "service_klark1",
-      //     "template_pgc21ve",
-      //     e.target,
-      //     "user_8ayg8CTlErK7KugcDtbmo"
-      // )
-      
-      .send("service_klark1",
-        "template_pgc21ve",
+    e.preventDefault()
+    this.setState({ disable: true })
+    axios
+      .post(
+        "http://localhost:5000/api/send-email",
         {
-          "numero": this.state.inputValue,
-          "plan": this.state.value1,
-          "entreprise": this.state.value2,
+          numero: this.state.inputValue,
+          plan: this.state.value1,
+          entreprise: this.state.value2,
+          email: "elias@klark.app",
         },
-        "user_8ayg8CTlErK7KugcDtbmo"
+        { headers: { "Access-Control-Allow-Origin": "*" } }
       )
-      .then(() => this.setState({
-        inputValue: ' ',
-        visible: false,
-      })).then(
+      .then(() =>
+        this.setState({
+          inputValue: "",
+          visible: false,
+        })
+      )
+      .then(
         (result) => {
-          message
-            .success(
-              "Votre pré-inscription a bien été prise en compte. Merci !",
-              3
-            )
+          message.success(
+            "Votre pré-inscription a bien été prise en compte. Merci !",
+            3
+          )
         },
         (error) => {
           console.log(error.text)
         }
-      ).then(this.inputRef.focus());
-    
+      )
+      .then(this.inputRef.focus())
   }
 
   handleChange = (e) => {
-        this.setState({
-            inputValue: e.target.value
-        });
+    this.setState({
+      inputValue: e.target.value,
+    })
   }
-  
+
   showModal = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     this.setState({
       visible: true,
-    });
-  };
+    })
+  }
 
-  handleOk = e => {
-    console.log(e);
+  handleOk = (e) => {
+    console.log(e)
     this.setState({
       visible: false,
-    });
-  };
+    })
+  }
 
   handleCancel = () => {
     this.setState({
       visible: false,
-    });
-    console.log(this.state.value1);
-    console.log(this.state.value2);
-  };
-
-  handleChangeSelect1 = value => {
-    this.setState({ value1: value });
+    })
+    console.log(this.state.value1)
+    console.log(this.state.value2)
   }
-  handleChangeSelect2 = value => {
-    this.setState({ value2: value });
+
+  handleChangeSelect1 = (value) => {
+    this.setState({ value1: value })
+  }
+  handleChangeSelect2 = (value) => {
+    this.setState({ value2: value })
   }
 
   render() {
-
     return (
       <HeaderWrapper id="top">
         <Container>
@@ -150,7 +145,7 @@ constructor(props) {
                 id="open-account"
               >
                 <HeaderInput
-                  ref={inputRef => this.inputRef = inputRef }
+                  ref={(inputRef) => (this.inputRef = inputRef)}
                   id="phoneForm"
                   placeholder="Numéro de téléphone"
                   name="phone_number"
@@ -174,24 +169,40 @@ constructor(props) {
                 okText="Valider"
                 cancelText="Annuler"
               >
-                <p><b>Numéro de téléphone :</b> {this.state.inputValue}</p>
-                <p><b>Plan :</b></p>
-                <Select defaultValue="🦅 • Premium" style={{ width: "100%", marginBottom: "20px"}} onChange={this.handleChangeSelect1}>
+                <p>
+                  <b>Numéro de téléphone :</b> {this.state.inputValue}
+                </p>
+                <p>
+                  <b>Plan :</b>
+                </p>
+                <Select
+                  defaultValue="🦅 • Premium"
+                  style={{ width: "100%", marginBottom: "20px" }}
+                  onChange={this.handleChangeSelect1}
+                >
                   <Option value="Solo">🐤 • Solo</Option>
                   <Option value="Standard">🕊 • Standard</Option>
                   <Option value="Premium">🦅 • Premium</Option>
                 </Select>
-                <p><b>Type d'entreprise :</b></p>
-                <Select defaultValue="SAS" style={{ width: "100%", marginBottom: "20px"}} onChange={this.handleChangeSelect2}>
+                <p>
+                  <b>Type d'entreprise :</b>
+                </p>
+                <Select
+                  defaultValue="SAS"
+                  style={{ width: "100%", marginBottom: "20px" }}
+                  onChange={this.handleChangeSelect2}
+                >
                   <Option value="SA">SA</Option>
                   <Option value="SAS">SAS</Option>
                   <Option value="SASU">SASU</Option>
                   <Option value="SARL">SARL</Option>
                   <Option value="EURL">EURL</Option>
-                  <Option value="Profession-libérale">Profession Libérale</Option>
+                  <Option value="Profession-libérale">
+                    Profession Libérale
+                  </Option>
                   <Option value="Micro-entreprise">Auto-entrepreneur</Option>
                   <Option value="Autre">Autre</Option>
-                  </Select>
+                </Select>
               </Modal>
             </HeaderTextGroup>
             <ImageWrapper>
