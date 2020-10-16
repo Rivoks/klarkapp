@@ -9,20 +9,20 @@ import { Link } from "gatsby"
 const Footer = () => (
   <FooterWrapper id="footer">
     <FooterColumnContainer>
-      <FooterColumn>
+      {/* <FooterColumn>
         <ul>
-          {/* <li>
+          <li>
             <a href="#">
               <ImageStore src={GPlay} alt="PlayStore"></ImageStore>
             </a>
-          </li> */}
+          </li>
           <li>
             <a href="#top">
               <ImageStore src={AStore} alt="download-applestore"></ImageStore>
             </a>
           </li>
         </ul>
-      </FooterColumn>
+      </FooterColumn> */}
 
       {/* <span>Réseaux</span>
         <ul>

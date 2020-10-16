@@ -111,7 +111,7 @@ const SEO = ({ description, lang, meta, title }) => {
           },
           {
             property: `og:description`,
-            content: {`${metaDescription}. %s`},
+            content: metaDescription,
           },
           {
             property: `og:type`,
