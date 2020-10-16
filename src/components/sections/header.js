@@ -79,7 +79,7 @@ class Header extends React.Component {
 
   handleOk = (e) => {
     console.log(e)
-
+  }
 
   handleOk = (e) => {
     console.log(e)
@@ -99,6 +99,7 @@ class Header extends React.Component {
   handleChangeSelect1 = (value) => {
     this.setState({ value1: value })
   }
+
   handleChangeSelect2 = (value) => {
     this.setState({ value2: value })
   }
