@@ -17,8 +17,7 @@ import image from "../images/logo-alt.png"
 import { JsonLd } from "react-schemaorg"
 
 class IndexPage extends Component {
-  constructor() {
-    super()
+  componentDidMount() {
     if (window.location.protocol.indexOf("https") == 0) {
       var el = document.createElement("meta")
       el.setAttribute("http-equiv", "Content-Security-Policy")
