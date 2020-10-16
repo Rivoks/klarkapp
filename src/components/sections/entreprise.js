@@ -124,7 +124,7 @@ const Entreprise = () => {
                 <center>
                   <img
                     src={Chicken}
-                    alt=""
+                    alt="Solo"
                     className="emojiPricing"
                     height="50px"
                   />
@@ -142,7 +142,6 @@ const Entreprise = () => {
                     }}
                   >
                     Économisez 119,88€ / an en vous inscrivant dès maintenant.
-
                   </p>
                   <Divider orientation="center"></Divider>
                 </center>
@@ -176,7 +175,7 @@ const Entreprise = () => {
                 <center>
                   <img
                     src={Dove}
-                    alt=""
+                    alt="Standard"
                     className="emojiPricing"
                     height="50px"
                   />
@@ -194,7 +193,6 @@ const Entreprise = () => {
                     }}
                   >
                     Économisez 239,88€ / an en vous inscrivant dès maintenant.
-
                   </p>
                   <Divider orientation="center"></Divider>
                 </center>
@@ -230,7 +228,7 @@ const Entreprise = () => {
                 <center>
                   <img
                     src={Eagle}
-                    alt=""
+                    alt="Premium"
                     className="emojiPricing"
                     height="50px"
                   />
@@ -285,7 +283,7 @@ const Entreprise = () => {
                 <center>
                   <img
                     src={Unicorn}
-                    alt=""
+                    alt="Sur-demande"
                     className="emojiPricing"
                     height="50px"
                   />

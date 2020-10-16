@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Compte pro pour les entreprises et entrepreneurs. Ouverture en 15 minutes.`,
+    title: `Compte pro pour les entreprises et indépendants en 10 minutes.`,
     description: `Ouverture d'un compte bancaire en 10 minutes, 100% en ligne, sans se déplacer. Arretez de surpayer les banques. Carte MasterCard Business et IBAN FR.`,
     author: `Klark`,
     siteUrl: `https://www.klark.app`,

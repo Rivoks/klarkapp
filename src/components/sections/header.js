@@ -111,7 +111,6 @@ class Header extends React.Component {
         <Container>
           <Flex>
             <HeaderTextGroup>
-              <Subtitle>La Néobanque du Futur</Subtitle>
               <h1 style={{ fontFamily: "HK Grotesk Extra Bold" }}>
                 Néobanque pour les Entreprises.
               </h1>
@@ -215,7 +214,7 @@ class Header extends React.Component {
               <div className="dashboard">
                 <img
                   src={Dashboard}
-                  alt=""
+                  alt="Dashboard"
                   className="resizeImg"
                   width="130%"
                   style={{
@@ -227,7 +226,7 @@ class Header extends React.Component {
                 className="headerImg"
                 // fluid={iPhone}
                 src={iPhone}
-                alt=""
+                alt="Klark"
               />
               <br />
             </ImageWrapper>

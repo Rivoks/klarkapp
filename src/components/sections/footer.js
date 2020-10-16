@@ -17,8 +17,8 @@ const Footer = () => (
             </a>
           </li> */}
           <li>
-            <a href="#">
-              <ImageStore src={AStore} alt="Apple Store"></ImageStore>
+            <a href="#top">
+              <ImageStore src={AStore} alt="download-applestore"></ImageStore>
             </a>
           </li>
         </ul>

@@ -20,21 +20,21 @@ const Features = () => (
       <FeaturesGrid>
         <FeatureItem>
           <FeatureTitle>
-            <img src={bankEmoji} alt="" className="emoji" />
+            <img src={bankEmoji} alt="compte-pro" className="emoji" />
           </FeatureTitle>
           <FeatureTitle>Compte Pro en ligne</FeatureTitle>
           <FeatureText>IBAN FR et virements instantanés.</FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>
-            <img src={cardEmoji} alt="" className="emoji" />
+            <img src={cardEmoji} alt="cartes-mastercard" className="emoji" />
           </FeatureTitle>
           <FeatureTitle>Cartes MasterCard</FeatureTitle>
           <FeatureText>Cartes physiques et virtuelles illimitées.</FeatureText>
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>
-            <img src={rocketEmoji} alt="" className="emoji" />
+            <img src={rocketEmoji} alt="hauts-plafonds" className="emoji" />
           </FeatureTitle>
           <FeatureTitle>Hauts plafonds</FeatureTitle>
           <FeatureText>
@@ -43,7 +43,11 @@ const Features = () => (
         </FeatureItem>
         <FeatureItem>
           <FeatureTitle>
-            <img src={messageEmoji} alt="" className="emoji" />
+            <img
+              src={messageEmoji}
+              alt="assistance-permanente"
+              className="emoji"
+            />
           </FeatureTitle>
           <FeatureTitle>Assistance 24/7</FeatureTitle>
           <FeatureText>

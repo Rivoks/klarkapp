@@ -16,7 +16,7 @@ const Splash = () => {
       <SplashWrapper id="tarifs">
         <Container className="blueBlock">
           <Row gutter={16}>
-            <Col md={{ span: 12 }} sm={{ span: 24 }} xs={{ span: 24 }} >
+            <Col md={{ span: 12 }} sm={{ span: 24 }} xs={{ span: 24 }}>
               <SplashTextGroup>
                 <Subtitle
                   style={{
@@ -35,47 +35,64 @@ const Splash = () => {
                   Nous avons tout ce que vous avez besoin.
                 </h3>
                 <FeatureText>
-                  <Row className="featureSplash" >
+                  <Row className="featureSplash">
                     <Col span={4}>
                       <img
                         src={Transaction}
-                        alt=""
+                        alt="transaction"
                         style={{ height: "40px", marginTop: "7px" }}
                       />
                     </Col>
-                    <Col span={20}>Toutes vos transactions en temps<br/>  réel.</Col>
+                    <Col span={20}>
+                      Toutes vos transactions en temps
+                      <br /> réel.
+                    </Col>
                   </Row>
 
                   <Row className="featureSplash">
                     <Col span={4}>
-                      <img src={cardEmoji} alt="" style={{ height: "40px" }} />
+                      <img
+                        src={cardEmoji}
+                        alt="cartes-virtuelles"
+                        style={{ height: "40px" }}
+                      />
                     </Col>
-                    <Col span={20}style={{marginTop:"5px"}}>Cartes virtuelles instantanées.</Col>
+                    <Col span={20} style={{ marginTop: "5px" }}>
+                      Cartes virtuelles instantanées.
+                    </Col>
                   </Row>
 
                   <Row className="featureSplash">
                     <Col span={4}>
-                      <img src={bagEmoji} alt="" style={{ height: "40px", marginTop:"6px" }} />
+                      <img
+                        src={bagEmoji}
+                        alt="cashback"
+                        style={{ height: "40px", marginTop: "6px" }}
+                      />
                     </Col>
-                    <Col span={20}>0.5% remboursées sur toutes les dépenses par carte.</Col>
+                    <Col span={20}>
+                      0.5% remboursées sur toutes les dépenses par carte.
+                    </Col>
                   </Row>
 
                   <Row className="featureSplash">
                     <Col span={4}>
                       <img
                         src={collabEmoji}
-                        alt=""
+                        alt="espace-comptable"
                         style={{ height: "40px" }}
                       />
                     </Col>
-                    <Col span={20}style={{marginTop:"5px"}}>Espace pour votre comptable.</Col>
+                    <Col span={20} style={{ marginTop: "5px" }}>
+                      Espace pour votre comptable.
+                    </Col>
                   </Row>
 
                   <Row className="featureSpalsh">
                     <Col span={4}>
                       <img
                         src={transfertEmoji}
-                        alt=""
+                        alt="virements-instantanes"
                         style={{ height: "40px", marginTop: "10px" }}
                       />
                     </Col>
@@ -90,7 +107,7 @@ const Splash = () => {
               <img
                 className="headerImg"
                 src={SplashImg}
-                alt=""
+                alt="splash"
                 style={{
                   width: "100%",
                   marginRight: "0px",
