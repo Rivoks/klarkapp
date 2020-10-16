@@ -1376,7 +1376,7 @@ const Legacy = () => {
 
 export default Legacy
 
-const Title = styled.h3`
+const Title = styled.h1`
   background-color: white;
   padding: 15% 0 20px 0;
   position: relative;

@@ -10,7 +10,8 @@ const GetStarted = () => (
   <StyledSection id="klark">
     <GetStartedContainer>
       <GetStartedTitle>
-        0.5% remboursées sur toutes vos dépenses<br/> avec la carte Klark.
+        0.5% remboursées sur toutes vos dépenses
+        <br /> avec la carte Klark.
       </GetStartedTitle>
       <AnchorLink href="#top">
         <TryItButton>Pré-inscription</TryItButton>
@@ -34,7 +35,6 @@ const GetStartedContainer = styled(Container)`
   align-items: center;
   flex-direction: column;
   padding: 80px 0 40px;
-
 `
 
 const GetStartedTitle = styled.h3`

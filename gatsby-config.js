@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Néobanque pour les pro`,
+    title: `Compte pro pour les entreprises et entrepreneurs. Ouverture en 15 minutes.`,
     description: `Ouverture d'un compte bancaire en 10 minutes, 100% en ligne, sans se déplacer. Arretez de surpayer les banques. Carte MasterCard Business et IBAN FR.`,
     author: `Klark`,
     siteUrl: `https://www.klark.app`,
@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-180544186-1',//process.env.GA_TRACKING_ID || "none",
+        trackingId: "UA-180544186-1", //process.env.GA_TRACKING_ID || "none",
         // Puts tracking script in the head instead of the body
         head: false,
         // Setting this parameter is optional

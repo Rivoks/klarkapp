@@ -42,7 +42,7 @@ const PrivacyPage = () => {
 
 export default PrivacyPage
 
-const Title = styled.h2`
+const Title = styled.h1`
   background-color: white;
   padding: 15% 0 20px 0;
   position: relative;
