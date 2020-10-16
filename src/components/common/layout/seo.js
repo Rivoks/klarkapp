@@ -23,6 +23,24 @@ const SEO = ({ description, lang, meta, title }) => {
   }
 
   useEffect(() => {
+    // HOTJAR
+
+    ;(function (h, o, t, j, a, r) {
+      h.hj =
+        h.hj ||
+        function () {
+          ;(h.hj.q = h.hj.q || []).push(arguments)
+        }
+      h._hjSettings = { hjid: 2045294, hjsv: 6 }
+      a = o.getElementsByTagName("head")[0]
+      r = o.createElement("script")
+      r.async = 1
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv
+      a.appendChild(r)
+    })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=")
+
+    // GOOGLE ANALYTICS
+
     ReactGA.initialize("UA-180544186-1", { debug: true, titleCase: false })
     ReactGA.ga("set", "checkProtocolTask", null)
     ReactGA.set({ page: window.location.pathname })
@@ -32,12 +50,7 @@ const SEO = ({ description, lang, meta, title }) => {
       action: "Created an Account",
     })
 
-    // const script = document.createElement("script");
-    // script.src = "https://static.zdassets.com/ekr/snippet.js?key=7af8bdac-02dc-433b-90b0-6866f6dc6901";
-    // script.async = true;
-    // console.log(script.src);
-
-    // document.body.appendChild(script);
+    // FACEBOOK
 
     !(function (f, b, e, v, n, t, s) {
       if (f.fbq) return
