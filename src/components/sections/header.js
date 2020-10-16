@@ -34,86 +34,15 @@ class Header extends React.Component {
     e.preventDefault()
     this.setState({ disable: true })
 
-    // var f = document.createElement("form")
-    // f.action = "http://app.klarkbank.com/site/send-email"
-    // f.method = "POST"
-    // // f.target = "_blank"
-
-    // var num = document.createElement("input")
-    // num.type = "hidden"
-    // num.name = "numero"
-    // num.value = this.state.inputValue
-
-    // var plan = document.createElement("input")
-    // plan.type = "hidden"
-    // plan.name = "plan"
-    // plan.value = this.state.value1
-
-    // var company = document.createElement("input")
-    // company.type = "hidden"
-    // company.name = "entreprise"
-    // company.value = this.state.value2
-
-    // var email = document.createElement("input")
-    // email.type = "hidden"
-    // email.name = "email"
-    // email.value = "rivokstv@gmail.com"
-
-    // f.appendChild(num)
-    // f.appendChild(plan)
-    // f.appendChild(email)
-    // f.appendChild(company)
-
-    // //var z=document.getElementById("FileNameId")
-    // //z.setAttribute("name", "IDProof");
-    // //z.setAttribute("id", "IDProof");
-    // //f.appendChild(z);
-
-    // document.body.appendChild(f)
-    // f.submit()
-
-    // $.ajax({
-    //   url: "http://app.klarkbank.com/site/send-email",
-    //   type: "post",
-    //   data: {
-    //     numero: this.state.inputValue,
-    //     plan: this.state.value1,
-    //     entreprise: this.state.value2,
-    //     email: "rivokstv@gmail.com",
-    //   },
-    // })
-    //   .then(() =>
-    //     this.setState({
-    //       inputValue: "",
-    //       visible: false,
-    //     })
-    //   )
-    //   .then(
-    //     (result) => {
-    //       message.success(
-    //         "Votre pré-inscription a bien été prise en compte. Merci !",
-    //         3
-    //       )
-    //     },
-    //     (error) => {
-    //       console.log(error.text)
-    //     }
-    //   )
-    //   .then(this.inputRef.focus())
-    //   .fail(function (xhr, err) {
-    //     console.error("Request error")
-    //   })
-
-    axios
-      .post(
-        "http://app.klarkbank.com/site/send-email",
+      .send(
+        "klarkapp",
+        "template_gstcjpo",
         {
           numero: this.state.inputValue,
           plan: this.state.value1,
           entreprise: this.state.value2,
-          email: "rivokstv@gmail.com",
         },
-        { headers: { "Access-Control-Allow-Origin": "*" } }
+        "user_S7StsEeGevsMXd3r0OcPe"
       )
       .then(() =>
         this.setState({
@@ -147,6 +76,10 @@ class Header extends React.Component {
       visible: true,
     })
   }
+
+  handleOk = (e) => {
+    console.log(e)
+
 
   handleOk = (e) => {
     console.log(e)
