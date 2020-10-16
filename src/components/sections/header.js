@@ -111,8 +111,13 @@ class Header extends React.Component {
         <Container>
           <Flex>
             <HeaderTextGroup>
-              <h1 style={{ fontFamily: "HK Grotesk Extra Bold" }}>
-                Néobanque pour les Entreprises.
+              <h1
+                style={{
+                  fontFamily: "HK Grotesk Extra Bold",
+                  lineHeight: "55px",
+                }}
+              >
+                Compte pro pour les Entreprises et les Indépendants.
               </h1>
               <h5>
                 <Row gutter={8}>
