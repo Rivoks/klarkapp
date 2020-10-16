@@ -39,10 +39,7 @@ class IndexPage extends Component {
         />
 
         <SEO title="Klark" />
-        <meta
-          http-equiv="Content-Security-Policy"
-          content="upgrade-insecure-requests"
-        ></meta>
+
         <Navigation />
         <Header />
         {/* <img src={image} alt="image" /> */}

@@ -88,6 +88,10 @@ const SEO = ({ description, lang, meta, title }) => {
         zendeskKey={"7af8bdac-02dc-433b-90b0-6866f6dc6901"}
         {...setting}
       />
+      {/* <meta
+        httpEquiv="Content-Security-Policy"
+        content="upgrade-insecure-requests"
+      /> */}
       <Helmet
         htmlAttributes={{
           lang,
@@ -96,7 +100,7 @@ const SEO = ({ description, lang, meta, title }) => {
         titleTemplate={`%s • ${site.siteMetadata.title}`}
         meta={[
           {
-            "http-equiv": `"Content-Security-Policy"`,
+            httpEquiv: `Content-Security-Policy`,
             content: "upgrade-insecure-requests",
           },
           {
