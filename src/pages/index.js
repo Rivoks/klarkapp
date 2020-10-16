@@ -14,13 +14,10 @@ import Splash from "../components/sections/splash"
 
 import image from "../images/logo-alt.png"
 
-import { JsonLd } from "react-schemaorg";
-
-
+import { JsonLd } from "react-schemaorg"
 
 class IndexPage extends Component {
-  
-  render() {  
+  render() {
     return (
       <Layout>
         <JsonLd
@@ -31,8 +28,12 @@ class IndexPage extends Component {
             alternateName: "Klark App",
           }}
         />
-        
+
         <SEO title="Klark" />
+        <meta
+          http-equiv="Content-Security-Policy"
+          content="upgrade-insecure-requests"
+        ></meta>
         <Navigation />
         <Header />
         {/* <img src={image} alt="image" /> */}
