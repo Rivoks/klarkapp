@@ -64,8 +64,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "backend": "nodemon index.js",
-    "serve": "concurrently \"npm run backend\"  \"gatsby serve\"",
+    "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "repository": {
