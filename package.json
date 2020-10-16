@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-saas-marketing",
   "private": true,
-  "description": "A simple one page marketing starter for saas companies",
+  "description": "Compte pro pour les entreprises et indépendants",
   "version": "0.1.0",
-  "author": "Keegan Burkett <keegan.t.marciniak@gmail.com>",
+  "author": "Klark <hello@klark.app>",
   "dependencies": {
     "@ant-design/icons": "^4.2.2",
     "axios": "^0.20.0",
