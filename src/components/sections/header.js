@@ -40,7 +40,7 @@ class Header extends React.Component {
           numero: this.state.inputValue,
           plan: this.state.value1,
           entreprise: this.state.value2,
-          email: "elias@klark.app",
+          email: "rivokstv@gmail.com",
         },
         { headers: { "Access-Control-Allow-Origin": "*" } }
       )
