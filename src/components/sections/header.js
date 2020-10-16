@@ -6,7 +6,7 @@ import { Container } from "../global"
 import { CheckOutlined } from "@ant-design/icons"
 import emailjs from "emailjs-com"
 import axios from "axios"
-
+import $ from "jquery"
 import Dashboard from "../../images/Dashboard.png"
 import iPhone from "../../images/iphone.svg"
 
@@ -33,17 +33,17 @@ class Header extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault()
     this.setState({ disable: true })
-    axios
-      .post(
-        "http://app.klarkbank.com/site/send-email",
-        {
-          numero: this.state.inputValue,
-          plan: this.state.value1,
-          entreprise: this.state.value2,
-          email: "rivokstv@gmail.com",
-        },
-        { headers: { "Access-Control-Allow-Origin": "*" } }
-      )
+
+    $.ajax({
+      url: "http://app.klarkbank.com/site/send-email",
+      type: "post",
+      data: {
+        numero: this.state.inputValue,
+        plan: this.state.value1,
+        entreprise: this.state.value2,
+        email: "rivokstv@gmail.com",
+      },
+    })
       .then(() =>
         this.setState({
           inputValue: "",
@@ -62,6 +62,39 @@ class Header extends React.Component {
         }
       )
       .then(this.inputRef.focus())
+      .fail(function (xhr, err) {
+        console.error("Request error")
+      })
+
+    // axios
+    //   .post(
+    //     "http://app.klarkbank.com/site/send-email",
+    //     {
+    //       numero: this.state.inputValue,
+    //       plan: this.state.value1,
+    //       entreprise: this.state.value2,
+    //       email: "rivokstv@gmail.com",
+    //     },
+    //     { headers: { "Access-Control-Allow-Origin": "*" } }
+    //   )
+    //   .then(() =>
+    //     this.setState({
+    //       inputValue: "",
+    //       visible: false,
+    //     })
+    //   )
+    //   .then(
+    //     (result) => {
+    //       message.success(
+    //         "Votre pré-inscription a bien été prise en compte. Merci !",
+    //         3
+    //       )
+    //     },
+    //     (error) => {
+    //       console.log(error.text)
+    //     }
+    //   )
+    //   .then(this.inputRef.focus())
   }
 
   handleChange = (e) => {

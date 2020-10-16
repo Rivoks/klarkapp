@@ -30,6 +30,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-transformer-sharp": "^2.5.13",
+    "jquery": "^3.5.1",
     "net": "^1.0.2",
     "nodemailer": "^6.4.14",
     "prop-types": "^15.7.2",
