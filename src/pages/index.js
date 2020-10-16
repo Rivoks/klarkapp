@@ -11,24 +11,50 @@ import GetStarted from "../components/sections/getstarted"
 import Entreprise from "../components/sections/entreprise"
 import Faq from "../components/sections/faq"
 import Splash from "../components/sections/splash"
+import Zendesk from "react-zendesk"
 
 import image from "../images/logo-alt.png"
 
 import { JsonLd } from "react-schemaorg"
 
 class IndexPage extends Component {
+  state = {
+    showZendesk: false,
+  }
+
   componentDidMount() {
-    if (window.location.protocol.indexOf("https") == 0) {
-      var el = document.createElement("meta")
-      el.setAttribute("http-equiv", "Content-Security-Policy")
-      el.setAttribute("content", "upgrade-insecure-requests")
-      document.head.append(el)
-    }
+    this.setState({ showZendesk: true })
   }
 
   render() {
+    const { showZendesk } = this.state
+
+    const setting = {
+      color: {
+        theme: "#0055FF",
+      },
+      launcher: {
+        chatLabel: {
+          "en-US": "Need Help",
+        },
+      },
+      contactForm: {
+        fields: [
+          { id: "description", prefill: { "*": "My pre-filled description" } },
+        ],
+      },
+    }
+
     return (
       <Layout>
+        {showZendesk ? (
+          <Zendesk
+            zendeskKey={"7af8bdac-02dc-433b-90b0-6866f6dc6901"}
+            {...setting}
+          />
+        ) : (
+          <></>
+        )}
         <JsonLd
           item={{
             "@context": "https://schema.org",
@@ -37,9 +63,7 @@ class IndexPage extends Component {
             alternateName: "Klark App",
           }}
         />
-
         <SEO title="Klark" />
-
         <Navigation />
         <Header />
         {/* <img src={image} alt="image" /> */}

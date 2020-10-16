@@ -6,22 +6,6 @@ import ReactGA from "react-ga"
 import Zendesk from "react-zendesk"
 
 const SEO = ({ description, lang, meta, title }) => {
-  const setting = {
-    color: {
-      theme: "#0055FF",
-    },
-    launcher: {
-      chatLabel: {
-        "en-US": "Need Help",
-      },
-    },
-    contactForm: {
-      fields: [
-        { id: "description", prefill: { "*": "My pre-filled description" } },
-      ],
-    },
-  }
-
   useEffect(() => {
     // HOTJAR
 
@@ -41,7 +25,7 @@ const SEO = ({ description, lang, meta, title }) => {
 
     // GOOGLE ANALYTICS
 
-    ReactGA.initialize("UA-180544186-1", { debug: true, titleCase: false })
+    ReactGA.initialize("UA-180544186-1", { debug: false, titleCase: false })
     ReactGA.ga("set", "checkProtocolTask", null)
     ReactGA.set({ page: window.location.pathname })
     ReactGA.pageview(window.location.href)
@@ -97,10 +81,6 @@ const SEO = ({ description, lang, meta, title }) => {
 
   return (
     <>
-      <Zendesk
-        zendeskKey={"7af8bdac-02dc-433b-90b0-6866f6dc6901"}
-        {...setting}
-      />
       <Helmet
         htmlAttributes={{
           lang,
