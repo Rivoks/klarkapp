@@ -34,6 +34,7 @@ class Header extends React.Component {
     e.preventDefault()
     this.setState({ disable: true })
 
+    emailjs
       .send(
         "klarkapp",
         "template_gstcjpo",
