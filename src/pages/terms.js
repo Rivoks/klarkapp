@@ -34,7 +34,8 @@ const Legacy = () => {
           collecter et traiter certaines donn&eacute;es &agrave;
           caract&egrave;re personnel des personnes qui utilisent le site
           Internet qu&rsquo;elle &eacute;dite disponible &agrave;
-          l&rsquo;adresse URL <a href="http://www.klark.app/">www.klark.app </a>
+          l&rsquo;adresse URL{" "}
+          <a href="https://www.klark.app/">www.klark.app </a>
           (ci-apr&egrave;s d&eacute;sign&eacute; le &laquo; Site &raquo;) ainsi
           que
         </p>
@@ -51,7 +52,7 @@ const Legacy = () => {
         <p>
           Le Site est h&eacute;berg&eacute; par la soci&eacute;t&eacute; Amazon
           Web Services LLC P.O. Box 81226 Seattle, WA 98108-1226,{" "}
-          <a href="http://aws.amazon.com/">http://aws.amazon.com.</a>
+          <a href="https://aws.amazon.com/">https://aws.amazon.com.</a>
         </p>
         <p>&nbsp;</p>
         <p>&nbsp;</p>

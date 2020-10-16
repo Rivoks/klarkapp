@@ -68,7 +68,7 @@ const Footer = () => (
             </a>
           </li>
           <li>
-            <a href="http://medium.com/@klarkbank" className="footer-links">
+            <a href="https://medium.com/@klarkbank" className="footer-links">
               Blog
             </a>
           </li>
