@@ -6,7 +6,7 @@ import { Container } from "../global"
 import { CheckOutlined } from "@ant-design/icons"
 import emailjs from "emailjs-com"
 import axios from "axios"
-import { sendEmail } from "../services/mail"
+
 import Dashboard from "../../images/Dashboard.png"
 import iPhone from "../../images/iphone.svg"
 
@@ -33,24 +33,17 @@ class Header extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault()
     this.setState({ disable: true })
-    // axios
-    //   .post(
-    //     "https://www.klark.app:5000/api/send-email",
-    //     {
-    //       numero: this.state.inputValue,
-    //       plan: this.state.value1,
-    //       entreprise: this.state.value2,
-    //       email: "elias@klark.app",
-    //     },
-    //     { headers: { "Access-Control-Allow-Origin": "*" } }
-    //   )
-
-    sendEmail({
-      numero: this.state.inputValue,
-      plan: this.state.value1,
-      entreprise: this.state.value2,
-      email: "rivokstv@gmail.com",
-    })
+    axios
+      .post(
+        "https://localhost:5000/api/send-email",
+        {
+          numero: this.state.inputValue,
+          plan: this.state.value1,
+          entreprise: this.state.value2,
+          email: "elias@klark.app",
+        },
+        { headers: { "Access-Control-Allow-Origin": "*" } }
+      )
       .then(() =>
         this.setState({
           inputValue: "",
