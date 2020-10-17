@@ -3,12 +3,12 @@ import styled from "styled-components"
 import { Container } from "../global"
 import { Row, Col } from "antd"
 import "../../../src/styles/GlobalStyles"
-import SplashImg from "../../images/splash.png"
-import Transaction from "../../images/bell-emoji.png"
-import collabEmoji from "../../images/collab-emoji.png"
-import cardEmoji from "../../images/card-emoji.png"
-import bagEmoji from "../../images/money-emoji.png"
-import transfertEmoji from "../../images/bolt-emoji.png"
+import SplashImg from "../../images/splash.webp"
+import Transaction from "../../images/bell-emoji.webp"
+import collabEmoji from "../../images/collab-emoji.webp"
+import cardEmoji from "../../images/card-emoji.webp"
+import bagEmoji from "../../images/money-emoji.webp"
+import transfertEmoji from "../../images/bolt-emoji.webp"
 
 const Splash = () => {
   return (

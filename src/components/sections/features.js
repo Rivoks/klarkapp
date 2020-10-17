@@ -5,10 +5,10 @@ import { Section, Container } from "../global"
 
 import "../../styles/GlobalStyles.js"
 
-import bankEmoji from "../../images/bank-emoji.png"
-import cardEmoji from "../../images/card-emoji.png"
-import messageEmoji from "../../images/message-emoji.png"
-import rocketEmoji from "../../images/rocket-emoji.png"
+import bankEmoji from "../../images/bank-emoji.webp"
+import cardEmoji from "../../images/card-emoji.webp"
+import messageEmoji from "../../images/message-emoji.webp"
+import rocketEmoji from "../../images/rocket-emoji.webp"
 
 const Features = () => (
   <Section id="fonctionnalités">
