@@ -10,6 +10,8 @@ import $ from "jquery"
 import Dashboard from "../../images/Dashboard.png"
 import iPhone from "../../images/iphone.svg"
 
+import { CheckCircleOutlined } from "@ant-design/icons"
+
 const { Option } = Select
 
 class Header extends React.Component {
@@ -21,6 +23,7 @@ class Header extends React.Component {
       value1: "Premium",
       value2: "SAS",
       disable: false,
+      submited: false,
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -47,23 +50,62 @@ class Header extends React.Component {
       )
       .then(() =>
         this.setState({
-          inputValue: "",
-          visible: false,
+          submited: true,
         })
       )
       .then(
-        (result) => {
-          message.success(
-            "Votre pré-inscription a bien été prise en compte. Merci !",
-            3
-          )
-        },
-        (error) => {
-          console.log(error.text)
-        }
+        setTimeout(
+          () =>
+            this.setState({
+              inputValue: "",
+              visible: false,
+            }),
+          3000
+        )
       )
       .then(this.inputRef.focus())
+    // .then(
+    //   (result) => {
+    //     message.success(
+    //       "Votre pré-inscription a bien été prise en compte. Merci !",
+    //       3
+    //     )
+    //   },
+    //   (error) => {
+    //     console.log(error.text)
+    //   }
+    // )
   }
+
+  // handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   this.setState({ disable: true })
+
+  //   this.setState({
+  //     submited: true,
+  //   })
+  //   setTimeout(
+  //     () =>
+  //       this.setState({
+  //         inputValue: "",
+  //         visible: false,
+  //       }),
+  //     3000
+  //   )
+
+  //   .then(
+  //     (result) => {
+  //       message.success(
+  //         "Votre pré-inscription a bien été prise en compte. Merci !",
+  //         3
+  //       )
+  //     },
+  //     (error) => {
+  //       console.log(error.text)
+  //     }
+  //   )
+  //   .then(this.inputRef.focus())
+  // }
 
   handleChange = (e) => {
     this.setState({
@@ -76,10 +118,6 @@ class Header extends React.Component {
     this.setState({
       visible: true,
     })
-  }
-
-  handleOk = (e) => {
-    console.log(e)
   }
 
   handleOk = (e) => {
@@ -106,6 +144,7 @@ class Header extends React.Component {
   }
 
   render() {
+    const { submited } = this.state
     return (
       <HeaderWrapper id="top">
         <Container>
@@ -179,40 +218,53 @@ class Header extends React.Component {
                 okText="Valider"
                 cancelText="Annuler"
               >
-                <p>
-                  <b>Numéro de téléphone :</b> {this.state.inputValue}
-                </p>
-                <p>
-                  <b>Plan :</b>
-                </p>
-                <Select
-                  defaultValue="🦅 • Premium"
-                  style={{ width: "100%", marginBottom: "20px" }}
-                  onChange={this.handleChangeSelect1}
-                >
-                  <Option value="Solo">🐤 • Solo</Option>
-                  <Option value="Standard">🕊 • Standard</Option>
-                  <Option value="Premium">🦅 • Premium</Option>
-                </Select>
-                <p>
-                  <b>Type d'entreprise :</b>
-                </p>
-                <Select
-                  defaultValue="SAS"
-                  style={{ width: "100%", marginBottom: "20px" }}
-                  onChange={this.handleChangeSelect2}
-                >
-                  <Option value="SA">SA</Option>
-                  <Option value="SAS">SAS</Option>
-                  <Option value="SASU">SASU</Option>
-                  <Option value="SARL">SARL</Option>
-                  <Option value="EURL">EURL</Option>
-                  <Option value="Profession-libérale">
-                    Profession Libérale
-                  </Option>
-                  <Option value="Micro-entreprise">Auto-entrepreneur</Option>
-                  <Option value="Autre">Autre</Option>
-                </Select>
+                {submited == false ? (
+                  <div>
+                    <p>
+                      <b>Numéro de téléphone :</b> {this.state.inputValue}
+                    </p>
+                    <p>
+                      <b>Plan :</b>
+                    </p>
+                    <Select
+                      defaultValue="🦅 • Premium"
+                      style={{ width: "100%", marginBottom: "20px" }}
+                      onChange={this.handleChangeSelect1}
+                    >
+                      <Option value="Solo">🐤 • Solo</Option>
+                      <Option value="Standard">🕊 • Standard</Option>
+                      <Option value="Premium">🦅 • Premium</Option>
+                    </Select>
+                    <p>
+                      <b>Type d'entreprise :</b>
+                    </p>
+                    <Select
+                      defaultValue="SAS"
+                      style={{ width: "100%", marginBottom: "20px" }}
+                      onChange={this.handleChangeSelect2}
+                    >
+                      <Option value="SA">SA</Option>
+                      <Option value="SAS">SAS</Option>
+                      <Option value="SASU">SASU</Option>
+                      <Option value="SARL">SARL</Option>
+                      <Option value="EURL">EURL</Option>
+                      <Option value="Profession-libérale">
+                        Profession Libérale
+                      </Option>
+                      <Option value="Micro-entreprise">
+                        Auto-entrepreneur
+                      </Option>
+                      <Option value="Autre">Autre</Option>
+                    </Select>
+                  </div>
+                ) : (
+                  <p>
+                    <CheckCircleOutlined
+                      style={{ color: "rgb(105, 204, 0)", marginRight: "5px" }}
+                    />
+                    Merci de vous être inscrits !
+                  </p>
+                )}
               </Modal>
             </HeaderTextGroup>
             <ImageWrapper>
