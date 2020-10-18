@@ -127,7 +127,7 @@ const GlobalStyles = createGlobalStyle`
   .per-month{
     font-size: 16px;
     color: grey;
-    font-family: 'HK Grotesk Normal';
+    font-family: 'SF Pro Display Regular';
     vertical-align: super;
   }
 
@@ -185,8 +185,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .resizeImg{
-      opacity: 0.5;
-    }
+    opacity: 0.5;
+  }
 
   @media (max-width: ${(props) => props.theme.screen.md}) {
     .dashboard {

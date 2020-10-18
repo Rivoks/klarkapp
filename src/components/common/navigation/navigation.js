@@ -83,7 +83,13 @@ export default class Navigation extends Component {
           <Brand>
             <Scrollspy offset={-64} item={["top"]} currentClassName="active">
               <AnchorLink href="#top" onClick={this.closeMobileMenu}>
-                <span style={{fontFamily: "SF Pro Display Heavy, HK Grotesk Extra Bold"}} >Klark</span>
+                <span
+                  style={{
+                    fontFamily: "SF Pro Display Heavy, SF Pro Display Black",
+                  }}
+                >
+                  Klark
+                </span>
               </AnchorLink>
             </Scrollspy>
           </Brand>
@@ -105,7 +111,7 @@ export default class Navigation extends Component {
             <AnchorLink href="#top">
               <button
                 style={{
-                  fontFamily: "HK Grotesk Semibold",
+                  fontFamily: "SF Pro Display Semibold",
                 }}
                 onClick={this.focusForm}
               >

@@ -87,6 +87,26 @@ const SEO = ({ description, lang, meta, title }) => {
         }}
         title={title}
         titleTemplate={`%s - ${site.siteMetadata.title}`}
+        link={[
+          {
+            rel: `prefetch`,
+            href: `../../../static/SFProDisplay-Regular.woff/`,
+            as: `font`,
+            type: `font/woff`,
+          },
+          {
+            rel: `prefetch`,
+            href: `../../../static/SFProDisplay-Bold.woff/`,
+            as: `font`,
+            type: `font/woff`,
+          },
+          {
+            rel: `prefetch`,
+            href: `../../../static/SFProDisplay-Medium.woff/`,
+            as: `font`,
+            type: `font/woff`,
+          },
+        ]}
         meta={[
           {
             httpEquiv: `Content-Security-Policy`,

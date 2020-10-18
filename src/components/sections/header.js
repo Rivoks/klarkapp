@@ -77,36 +77,6 @@ class Header extends React.Component {
     // )
   }
 
-  // handleSubmit = (e) => {
-  //   e.preventDefault()
-  //   this.setState({ disable: true })
-
-  //   this.setState({
-  //     submited: true,
-  //   })
-  //   setTimeout(
-  //     () =>
-  //       this.setState({
-  //         inputValue: "",
-  //         visible: false,
-  //       }),
-  //     3000
-  //   )
-
-  //   .then(
-  //     (result) => {
-  //       message.success(
-  //         "Votre pré-inscription a bien été prise en compte. Merci !",
-  //         3
-  //       )
-  //     },
-  //     (error) => {
-  //       console.log(error.text)
-  //     }
-  //   )
-  //   .then(this.inputRef.focus())
-  // }
-
   handleChange = (e) => {
     this.setState({
       inputValue: e.target.value,
@@ -152,7 +122,7 @@ class Header extends React.Component {
             <HeaderTextGroup>
               <h1
                 style={{
-                  fontFamily: "HK Grotesk Extra Bold",
+                  fontFamily: "SF Pro Display Bold",
                   lineHeight: "55px",
                 }}
               >
@@ -400,7 +370,7 @@ const HeaderInput = styled.input`
 `
 
 const HeaderButton = styled.button`
-  font-family: "HK Grotesk Semibold";
+  font-family: "SF Pro Display Semibold";
   font-size: 14px;
   color: white;
   letter-spacing: 1px;

@@ -2,14 +2,14 @@
 
 const theme = {
   font: {
-    primary: `'HK Grotesk Normal'`,
-    secondary: `'HK Grotesk Medium'`,
-    light: `'HK Grotesk Light'`,
-    normal: `'HK Grotesk Normal'`,
-    medium: `'HK Grotesk Medium'`,
-    semibold: `'HK Grotesk Semibold'`,
-    bold: `'HK Grotesk Bold'`,
-    extrabold: `'HK Grotesk Extra Bold'`,
+    primary: `'SF Pro Display Regular'`,
+    secondary: `'SF Pro Display Medium'`,
+    light: `'SF Pro Display Light'`,
+    normal: `'SF Pro Display Regular'`,
+    medium: `'SF Pro Display Medium'`,
+    semibold: `'SF Pro Display Semibold'`,
+    bold: `'SF Pro Display Bold'`,
+    extrabold: `'SF Pro Display Black'`,
   },
   font_size: {
     xxxsmall: "font-size: 12px;",

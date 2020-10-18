@@ -11,11 +11,14 @@ import GetStarted from "../components/sections/getstarted"
 import Entreprise from "../components/sections/entreprise"
 import Faq from "../components/sections/faq"
 import Splash from "../components/sections/splash"
+import Steps from "../components/sections/steps"
 import Zendesk from "react-zendesk"
+import "../styles/GlobalStyles"
 
 import image from "../images/logo-alt.png"
 
 import { JsonLd } from "react-schemaorg"
+import FadeIn from "react-fade-in"
 
 class IndexPage extends Component {
   state = {
@@ -65,12 +68,15 @@ class IndexPage extends Component {
         />
         <SEO title="Klark" />
         <Navigation />
-        <Header />
+        <FadeIn transitionDuration="1000">
+          <Header />
+        </FadeIn>
         {/* <img src={image} alt="image" /> */}
         <Features />
         <GetStarted />
         <Entreprise />
         <Splash />
+        <Steps />
         <Faq />
         <Footer />
       </Layout>

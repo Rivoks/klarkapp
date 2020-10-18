@@ -522,7 +522,7 @@ const FormSubtitle = styled.span`
 `
 
 const EntrepriseButton = styled.button`
-  font-family: "HK Grotesk Semibold";
+  font-family: "SF Pro Display Semibold";
   font-size: 14px;
   color: white;
   letter-spacing: 1px;

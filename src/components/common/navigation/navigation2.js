@@ -98,7 +98,7 @@ export default class Navigation2 extends Component {
             <Link to="/#top">
               <button
                 style={{
-                  fontFamily: "HK Grotesk Semibold",
+                  fontFamily: "SF Pro Display Semibold",
                 }}
               >
                 Pré-inscription
