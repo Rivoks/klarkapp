@@ -16,10 +16,10 @@ const GetStarted = () => (
         <TryItButton>Pré-inscription</TryItButton>
       </AnchorLink>
       <Subtitle>Inscrivez-vous maintenant et profitez de -50% à vie.</Subtitle>
-      <Row gutter={16} justify="center">
+      {/* <Row gutter={16} justify="center">
         <Col md={{ span: 12 }} sm={{ span: 24 }} xs={{ span: 24 }}>
           <StepCard>
-            <h3>Cash back illimité</h3>
+            <h4>Cash back illimité</h4>
             <StepDesc>
               A chaque fois que vous achetez quelque chose avec la carte Klark,
               vous recevez 0.50% en cash. Ce n’est ni des points de fidélités,
@@ -46,17 +46,49 @@ const GetStarted = () => (
             </center>
           </StepCard>
         </Col>
-        <Col md={{ span: 24 }} sm={{ span: 24 }} xs={{ span: 24 }}>
-          <StepCard style={{ height: "auto", backgroundColor: "black" }}>
-            <h3 style={{ color: "white" }}>Jusqu'à 10% remboursés</h3>
-            <StepDesc style={{ color: "white" }}>
-              Chaque fois que vous dépensez chez nos 18,000 marchands
-              sélectionnés. La liste sera bientôt consultable au grand public et
-              mise à jour régulièrement.
-            </StepDesc>
-          </StepCard>
-        </Col>
       </Row>
+      <StepCard
+        style={{ height: "auto", backgroundColor: "black", padding: "0" }}
+      >
+        <Row gutter={24} justify="left">
+          <Col
+            md={{ span: 10 }}
+            sm={{ span: 24 }}
+            xs={{ span: 24 }}
+            style={{ padding: "5%" }}
+          >
+            <h4 style={{ color: "white" }}>Cash back illimité</h4>
+            <StepDesc style={{ color: "white" }}>
+              A chaque fois que vous achetez quelque chose avec la carte Klark,
+              vous recevez 0.50% en cash. Ce n’est ni des points de fidélités,
+              ni des récompenses et ca n’expire jamais. Ce cash directement est
+              chargé sur votre compte Klark, tous les jours, et c’est illimité.
+              Vous pouvez payez partout dans le monde, et même en ligne.
+            </StepDesc>
+          </Col>
+
+          <Col
+            md={{ span: 12 }}
+            sm={{ span: 24 }}
+            xs={{ span: 24 }}
+            style={{ padding: "5%" }}
+          >
+            <center>
+              <img
+                src={CashbackImg}
+                alt="SMS"
+                style={{
+                  width: "100%",
+                  borderRadius: "25px",
+                  height: "420px",
+                  objectFit: "cover",
+                }}
+              />
+            </center>
+          </Col>
+        </Row>
+      </StepCard>
+     */}
     </GetStartedContainer>
   </StyledSection>
 )
@@ -132,19 +164,10 @@ const StepCard = styled.div`
   align-item: center;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
 `
-
-const StepNumber = styled.span`
-  border: 4px solid #0055ff;
-  padding: 10px 15px;
-  height: 40px;
-  width: 40px;
-  border-radius: 50px;
-  color: #0055ff;
-  font-size: 20px;
-  margin-bottom: 50px;
-  font-family: "SF Pro Display Black";
-`
-const StepDesc = styled.h4`
-  color: black;
+const StepDesc = styled.p`
+  color: grey;
   font-size: 18px;
+  line-height: 30px;
+  font-family: "SF Pro Display Regular";
+  margin-top: 30px;
 `

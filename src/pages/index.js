@@ -76,7 +76,7 @@ class IndexPage extends Component {
         <GetStarted />
         <Entreprise />
         <Splash />
-        <Steps />
+        {/* <Steps /> */}
         <Faq />
         <Footer />
       </Layout>
