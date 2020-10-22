@@ -3,7 +3,8 @@ import styled from "styled-components"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { Row, Col } from "antd"
 import { Container, Section } from "../global"
-import CashbackImg from "../../images/cashback.jpeg"
+import CashbackImg from "../../images/card-grey.svg"
+import PerksImg from "../../images/perks.svg"
 
 const GetStarted = () => (
   <StyledSection id="klark">
@@ -16,71 +17,47 @@ const GetStarted = () => (
         <TryItButton>Pré-inscription</TryItButton>
       </AnchorLink>
       <Subtitle>Inscrivez-vous maintenant et profitez de -50% à vie.</Subtitle>
-      {/* <Row gutter={16} justify="center">
-        <Col md={{ span: 12 }} sm={{ span: 24 }} xs={{ span: 24 }}>
-          <StepCard>
-            <h4>Cash back illimité</h4>
-            <StepDesc>
-              A chaque fois que vous achetez quelque chose avec la carte Klark,
-              vous recevez 0.50% en cash. Ce n’est ni des points de fidélités,
-              ni des récompenses et ca n’expire jamais. Ce cash directement est
-              chargé sur votre compte Klark, tous les jours, et c’est illimité.
-              Vous pouvez payez partout dans le monde, et même en ligne.
-            </StepDesc>
-          </StepCard>
-        </Col>
 
-        <Col md={{ span: 12 }} sm={{ span: 24 }} xs={{ span: 24 }}>
-          <StepCard style={{ padding: "0%" }}>
-            <center>
-              <img
-                src={CashbackImg}
-                alt="SMS"
-                style={{
-                  width: "100%",
-                  borderRadius: "25px",
-                  height: "420px",
-                  objectFit: "cover",
-                }}
-              />
-            </center>
-          </StepCard>
-        </Col>
-      </Row>
       <StepCard
-        style={{ height: "auto", backgroundColor: "black", padding: "0" }}
+        style={{ height: "auto", backgroundColor: "white", padding: "0" }}
       >
         <Row gutter={24} justify="left">
           <Col
-            md={{ span: 10 }}
+            md={{ span: 11 }}
             sm={{ span: 24 }}
             xs={{ span: 24 }}
-            style={{ padding: "5%" }}
+            className="specialCol"
           >
-            <h4 style={{ color: "white" }}>Cash back illimité</h4>
-            <StepDesc style={{ color: "white" }}>
+            <h4 style={{ fontSize: "40px", lineHeight: "50px" }}>
+              Gagner de l'argent en payant.
+            </h4>
+            <StepDesc>
               A chaque fois que vous achetez quelque chose avec la carte Klark,
-              vous recevez 0.50% en cash. Ce n’est ni des points de fidélités,
-              ni des récompenses et ca n’expire jamais. Ce cash directement est
-              chargé sur votre compte Klark, tous les jours, et c’est illimité.
-              Vous pouvez payez partout dans le monde, et même en ligne.
+              vous recevez 0.50% en cash.
+              <br /> Ce n’est ni des points de fidélités, ni des récompenses et
+              ca n’expire jamais. Ce cash est directement chargé sur votre
+              compte Klark, tous les jours, et c’est illimité. Vous pouvez payez
+              partout dans le monde, et même en ligne.
             </StepDesc>
           </Col>
 
           <Col
-            md={{ span: 12 }}
+            md={{ span: 12, offset: 1 }}
             sm={{ span: 24 }}
             xs={{ span: 24 }}
-            style={{ padding: "5%" }}
+            style={{ padding: "0" }}
           >
             <center>
               <img
                 src={CashbackImg}
-                alt="SMS"
+                alt="Pers"
+                className="headerImg"
                 style={{
                   width: "100%",
                   borderRadius: "25px",
-                  height: "420px",
+                  padding: "10%",
+                  marginTop: "70px",
+                  height: "auto",
                   objectFit: "cover",
                 }}
               />
@@ -88,7 +65,59 @@ const GetStarted = () => (
           </Col>
         </Row>
       </StepCard>
-     */}
+
+      <StepCard
+        style={{ height: "auto", backgroundColor: "black", padding: "0" }}
+      >
+        <Row gutter={24} justify="left">
+          <Col
+            md={{ span: 11 }}
+            sm={{ span: 24 }}
+            xs={{ span: 24 }}
+            className="specialCol"
+          >
+            <h4
+              style={{
+                color: "white",
+                fontSize: "40px",
+                lineHeight: "50px",
+                width: "100%",
+                backgroundColor: "transparent",
+              }}
+            >
+              Jusqu'à 10% remboursés
+            </h4>
+            <StepDesc style={{ color: "white" }}>
+              Chaque fois que vous dépensez chez nos 18,000 marchands
+              sélectionnés. La liste sera bientôt consultable au grand public et
+              mise à jour régulièrement.
+            </StepDesc>
+          </Col>
+
+          <Col
+            md={{ span: 12, offset: 1 }}
+            sm={{ span: 24 }}
+            xs={{ span: 24 }}
+            style={{
+              padding: "5%",
+              backgroundColor: "transparent",
+            }}
+          >
+            <center>
+              <img
+                src={PerksImg}
+                alt="Pers"
+                style={{
+                  width: "100%",
+                  borderRadius: "25px",
+                  height: "auto",
+                  objectFit: "cover",
+                }}
+              />
+            </center>
+          </Col>
+        </Row>
+      </StepCard>
     </GetStartedContainer>
   </StyledSection>
 )
@@ -110,11 +139,12 @@ const GetStartedContainer = styled(Container)`
 `
 
 const GetStartedTitle = styled.h3`
-  margin: 0 auto 32px;
+  margin: 100px auto 32px;
   text-align: center;
   @media (max-width: ${(props) => props.theme.screen.sm}) {
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 200px;
   }
 `
 
@@ -158,11 +188,16 @@ const StepCard = styled.div`
   margin-top: 30px;
   background-color: #fff;
   border-radius: 25px;
-  padding: 10%;
+  padding: 7% 10% 10% 10%;
   width: 100%;
   height: 420px;
   align-item: center;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  @media (max-width: ${(props) => props.theme.screen.sm}) {
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 `
 const StepDesc = styled.p`
   color: grey;

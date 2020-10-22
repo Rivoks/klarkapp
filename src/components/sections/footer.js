@@ -102,7 +102,7 @@ const Footer = () => (
         Financial Conduct Authority (FCA) en tant qu'agent de CashFlows dont le
         numéro d’agrément est le 900006 et qui lui même est une institution de
         monnaie électronique en vertu du Electronic Money Regulations 2011. La
-        carte Klark est une carte bancaire Mastercard émise par ClashFlows sous
+        carte Klark est une carte bancaire Mastercard émise par CashFlows sous
         licence de Mastercard International. Mastercard est une marque déposée
         de Mastercard International Inc.
       </small>

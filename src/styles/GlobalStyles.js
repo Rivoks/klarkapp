@@ -207,6 +207,12 @@ const GlobalStyles = createGlobalStyle`
   }
   }
 
+  
+  .specialCol {
+    padding: 7% !important;
+    margin-top: 6% !important;
+  }
+
   .faqTitle{
     font-size: 20px;
   }
@@ -226,7 +232,14 @@ const GlobalStyles = createGlobalStyle`
     margin-bottom: 10%!important;
   }
 
+  
+
   @media (max-width: ${(props) => props.theme.screen.sm}) {
+
+    .specialCol {
+      padding: 11% !important;
+      margin-top: 0 !important;
+    }
 
     .blueBlock {
       padding-left: 3%;

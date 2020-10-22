@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="468px" height="449px" viewBox="0 0 468 449" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <defs>
+        <filter x="-16.5%" y="-17.4%" width="133.3%" height="134.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.13710118 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon" transform="translate(-23.000000, -31.000000)">
+            <g id="Group-7" filter="url(#filter-1)" transform="translate(69.000000, 77.000000)">
+                <g id="Group-4">
+                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="375" height="357" rx="20"></rect>
+                    <g id="Group-3" transform="translate(282.000000, 21.000000)">
+                        <g id="Group-10" transform="translate(2.000000, 0.000000)">
+                            <g id="002-arrow-point-to-right" transform="translate(67.000000, 3.000000)" fill="#AFAFAF" fill-rule="nonzero">
+                                <path d="M5.4964823,5.49318584 L1.19809735,9.79143805 C0.924668142,10.065 0.481349558,10.065 0.208053097,9.79143805 C-0.0652654867,9.51811947 -0.0652654867,9.07482301 0.208053097,8.80152655 L4.01146018,4.99823009 L0.208163717,1.19506637 C-0.0651548673,0.921637168 -0.0651548673,0.478384956 0.208163717,0.205066372 C0.481482301,-0.0683628319 0.924778761,-0.0683628319 1.19820796,0.205066372 L5.49659292,4.50338496 C5.63325221,4.64011062 5.70150442,4.81911504 5.70150442,4.99820796 C5.70150442,5.17738938 5.63311947,5.35652655 5.4964823,5.49318584 Z" id="Path"></path>
+                            </g>
+                            <text id="+12,34-€" font-family="SFProRounded-Bold, SF Pro Rounded" font-size="14" font-weight="bold" fill="#69CC00">
+                                <tspan x="0.541015625" y="13">+12,34 €</tspan>
+                            </text>
+                            <g id="Group-13" transform="translate(28.000000, 24.000000)">
+                                <rect id="Rectangle" fill="#E0E0E0" x="0" y="0" width="32" height="16" rx="3"></rect>
+                                <text id="3%" font-family="SFProRounded-Bold, SF Pro Rounded" font-size="12" font-weight="bold" fill="#838383">
+                                    <tspan x="6.8359375" y="12">3%</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="Group-10" transform="translate(2.000000, 70.000000)">
+                            <g id="002-arrow-point-to-right" transform="translate(67.000000, 3.000000)" fill="#AFAFAF" fill-rule="nonzero">
+                                <path d="M5.4964823,5.49318584 L1.19809735,9.79143805 C0.924668142,10.065 0.481349558,10.065 0.208053097,9.79143805 C-0.0652654867,9.51811947 -0.0652654867,9.07482301 0.208053097,8.80152655 L4.01146018,4.99823009 L0.208163717,1.19506637 C-0.0651548673,0.921637168 -0.0651548673,0.478384956 0.208163717,0.205066372 C0.481482301,-0.0683628319 0.924778761,-0.0683628319 1.19820796,0.205066372 L5.49659292,4.50338496 C5.63325221,4.64011062 5.70150442,4.81911504 5.70150442,4.99820796 C5.70150442,5.17738938 5.63311947,5.35652655 5.4964823,5.49318584 Z" id="Path"></path>
+                            </g>
+                            <text id="+97,18-€" font-family="SFProRounded-Bold, SF Pro Rounded" font-size="14" font-weight="bold" fill="#69CC00">
+                                <tspan x="0.69140625" y="13">+97,18 €</tspan>
+                            </text>
+                            <g id="Group-13" transform="translate(28.000000, 24.000000)">
+                                <rect id="Rectangle" fill="#E0E0E0" x="0" y="0" width="32" height="16" rx="3"></rect>
+                                <text id="8%" font-family="SFProRounded-Bold, SF Pro Rounded" font-size="12" font-weight="bold" fill="#838383">
+                                    <tspan x="6.56640625" y="12">8%</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="Group-10" transform="translate(0.000000, 140.000000)">
+                            <g id="002-arrow-point-to-right" transform="translate(69.000000, 3.000000)" fill="#AFAFAF" fill-rule="nonzero">
+                                <path d="M5.4964823,5.49318584 L1.19809735,9.79143805 C0.924668142,10.065 0.481349558,10.065 0.208053097,9.79143805 C-0.0652654867,9.51811947 -0.0652654867,9.07482301 0.208053097,8.80152655 L4.01146018,4.99823009 L0.208163717,1.19506637 C-0.0651548673,0.921637168 -0.0651548673,0.478384956 0.208163717,0.205066372 C0.481482301,-0.0683628319 0.924778761,-0.0683628319 1.19820796,0.205066372 L5.49659292,4.50338496 C5.63325221,4.64011062 5.70150442,4.81911504 5.70150442,4.99820796 C5.70150442,5.17738938 5.63311947,5.35652655 5.4964823,5.49318584 Z" id="Path"></path>
+                            </g>
+                            <text id="+24,42-€" font-family="SFProRounded-Bold, SF Pro Rounded" font-size="14" font-weight="bold" fill="#69CC00">
+                                <tspan x="0.572265625" y="13">+24,42 €</tspan>
+                            </text>
+                            <g id="Group-13" transform="translate(30.000000, 24.000000)">
+                                <rect id="Rectangle" fill="#E0E0E0" x="0" y="0" width="32" height="16" rx="3"></rect>
+                                <text id="4%" font-family="SFProRounded-Bold, SF Pro Rounded" font-size="12" font-weight="bold" fill="#838383">
+                                    <tspan x="6.625" y="12">4%</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="Group-10" transform="translate(9.000000, 210.000000)">
+                            <g id="002-arrow-point-to-right" transform="translate(60.000000, 3.000000)" fill="#AFAFAF" fill-rule="nonzero">
+                                <path d="M5.4964823,5.49318584 L1.19809735,9.79143805 C0.924668142,10.065 0.481349558,10.065 0.208053097,9.79143805 C-0.0652654867,9.51811947 -0.0652654867,9.07482301 0.208053097,8.80152655 L4.01146018,4.99823009 L0.208163717,1.19506637 C-0.0651548673,0.921637168 -0.0651548673,0.478384956 0.208163717,0.205066372 C0.481482301,-0.0683628319 0.924778761,-0.0683628319 1.19820796,0.205066372 L5.49659292,4.50338496 C5.63325221,4.64011062 5.70150442,4.81911504 5.70150442,4.99820796 C5.70150442,5.17738938 5.63311947,5.35652655 5.4964823,5.49318584 Z" id="Path"></path>
+                            </g>
+                            <text id="+2,45-€" font-family="SFProRounded-Bold, SF Pro Rounded" font-size="14" font-weight="bold" fill="#69CC00">
+                                <tspan x="0.329101562" y="13">+2,45 €</tspan>
+                            </text>
+                            <g id="Group-13" transform="translate(21.000000, 24.000000)">
+                                <rect id="Rectangle" fill="#E0E0E0" x="0" y="0" width="32" height="16" rx="3"></rect>
+                                <text id="2%" font-family="SFProRounded-Bold, SF Pro Rounded" font-size="12" font-weight="bold" fill="#838383">
+                                    <tspan x="7.15820312" y="12">2%</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="Group-10" transform="translate(8.000000, 280.000000)">
+                            <g id="002-arrow-point-to-right" transform="translate(61.000000, 3.000000)" fill="#AFAFAF" fill-rule="nonzero">
+                                <path d="M5.4964823,5.49318584 L1.19809735,9.79143805 C0.924668142,10.065 0.481349558,10.065 0.208053097,9.79143805 C-0.0652654867,9.51811947 -0.0652654867,9.07482301 0.208053097,8.80152655 L4.01146018,4.99823009 L0.208163717,1.19506637 C-0.0651548673,0.921637168 -0.0651548673,0.478384956 0.208163717,0.205066372 C0.481482301,-0.0683628319 0.924778761,-0.0683628319 1.19820796,0.205066372 L5.49659292,4.50338496 C5.63325221,4.64011062 5.70150442,4.81911504 5.70150442,4.99820796 C5.70150442,5.17738938 5.63311947,5.35652655 5.4964823,5.49318584 Z" id="Path"></path>
+                            </g>
+                            <text id="+0,48-€" font-family="SFProRounded-Bold, SF Pro Rounded" font-size="14" font-weight="bold" fill="#69CC00">
+                                <tspan x="0.208007812" y="13">+0,48 €</tspan>
+                            </text>
+                            <g id="Group-13" transform="translate(22.000000, 24.000000)">
+                                <rect id="Rectangle" fill="#E0E0E0" x="0" y="0" width="32" height="16" rx="3"></rect>
+                                <text id="3%" font-family="SFProRounded-Bold, SF Pro Rounded" font-size="12" font-weight="bold" fill="#838383">
+                                    <tspan x="6.8359375" y="12">3%</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group" transform="translate(74.000000, 90.000000)">
+                    <text id="Apple" font-family="SFProRounded-Bold, SF Pro Rounded" font-size="15" font-weight="bold" fill="#000000">
+                        <tspan x="0" y="14">Apple</tspan>
+                    </text>
+                    <text id="Il-y-a-1-heure" font-family="SFProRounded-Semibold, SF Pro Rounded" font-size="13" font-weight="500" fill="#6D7278">
+                        <tspan x="0" y="36">Il y a 1 heure</tspan>
+                    </text>
+                </g>
+                <text id="💻" font-family="AppleColorEmoji, Apple Color Emoji" font-size="30" font-weight="normal" fill="#161F3D">
+                    <tspan x="22" y="120">💻</tspan>
+                </text>
+                <text id="💻" font-family="AppleColorEmoji, Apple Color Emoji" font-size="30" font-weight="normal" fill="#161F3D">
+                    <tspan x="22" y="190">💻</tspan>
+                </text>
+                <g id="Group" transform="translate(74.000000, 160.000000)">
+                    <text id="Darty" font-family="SFProRounded-Bold, SF Pro Rounded" font-size="15" font-weight="bold" fill="#000000">
+                        <tspan x="0" y="14">Darty</tspan>
+                    </text>
+                    <text id="Hier" font-family="SFProRounded-Semibold, SF Pro Rounded" font-size="13" font-weight="500" fill="#6D7278">
+                        <tspan x="0" y="36">Hier</tspan>
+                    </text>
+                </g>
+                <g id="Group" transform="translate(74.000000, 230.000000)">
+                    <text id="Uber" font-family="SFProRounded-Bold, SF Pro Rounded" font-size="15" font-weight="bold" fill="#000000">
+                        <tspan x="0" y="14">Uber</tspan>
+                    </text>
+                    <text id="4-aout" font-family="SFProRounded-Semibold, SF Pro Rounded" font-size="13" font-weight="500" fill="#6D7278">
+                        <tspan x="0" y="36">4 aout</tspan>
+                    </text>
+                </g>
+                <text id="🚖" font-family="AppleColorEmoji, Apple Color Emoji" font-size="30" font-weight="normal" fill="#161F3D">
+                    <tspan x="22" y="261">🚖</tspan>
+                </text>
+                <g id="Group" transform="translate(74.000000, 301.000000)">
+                    <text id="Starbucks" font-family="SFProRounded-Bold, SF Pro Rounded" font-size="15" font-weight="bold" fill="#000000">
+                        <tspan x="0" y="14">Starbucks</tspan>
+                    </text>
+                    <text id="10-janvier" font-family="SFProRounded-Semibold, SF Pro Rounded" font-size="13" font-weight="500" fill="#6D7278">
+                        <tspan x="0" y="36">1 aout</tspan>
+                    </text>
+                </g>
+                <text id="☕️" font-family="AppleColorEmoji, Apple Color Emoji" font-size="30" font-weight="normal" fill="#161F3D">
+                    <tspan x="22" y="331">☕️</tspan>
+                </text>
+                <g id="Group" transform="translate(74.000000, 19.000000)">
+                    <text id="AirBnb" font-family="SFProRounded-Bold, SF Pro Rounded" font-size="15" font-weight="bold" fill="#000000">
+                        <tspan x="0" y="14">AirBnb</tspan>
+                    </text>
+                    <text id="Il-y-a-moins-d’une-m" font-family="SFProRounded-Semibold, SF Pro Rounded" font-size="13" font-weight="500" fill="#6D7278">
+                        <tspan x="0" y="36">Il y a moins d’une minute</tspan>
+                    </text>
+                </g>
+                <text id="🛌" font-family="AppleColorEmoji, Apple Color Emoji" font-size="30" font-weight="normal" fill="#161F3D">
+                    <tspan x="22" y="49">🛌</tspan>
+                </text>
+                <line x1="74" y1="72.5" x2="375" y2="72.5" id="Line-3" stroke="#EBEBEB" stroke-linecap="square"></line>
+                <line x1="74" y1="143.5" x2="375" y2="143.5" id="Line-3" stroke="#EBEBEB" stroke-linecap="square"></line>
+                <line x1="76" y1="214.5" x2="375" y2="214.5" id="Line-3" stroke="#EBEBEB" stroke-linecap="square"></line>
+                <line x1="74" y1="285.5" x2="375" y2="285.5" id="Line-3" stroke="#EBEBEB" stroke-linecap="square"></line>
+                <line x1="74" y1="356.5" x2="375" y2="356.5" id="Line-3" stroke="#EBEBEB" stroke-linecap="square"></line>
+            </g>
+        </g>
+    </g>
+</svg>

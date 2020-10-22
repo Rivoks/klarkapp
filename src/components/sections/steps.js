@@ -3,18 +3,15 @@ import styled from "styled-components"
 import { Container } from "../global"
 import { Row, Col } from "antd"
 import "../../../src/styles/GlobalStyles"
-import SignIn from "../../images/sign-in.svg"
-import Sms from "../../images/sms.svg"
-import CreditCard from "../../images/credit-card.svg"
+import SignIn from "../../images/preinscription.svg"
+import Sms from "../../images/notification-message.svg"
+import CreditCard from "../../images/card.svg"
 
 const Steps = () => {
   return (
     <>
       <StepsWrapper id="tarifs">
-        <HeaderTitleSteps>
-          Ouverture de votre compte Klark
-          <br /> en quelques minutes
-        </HeaderTitleSteps>
+        <HeaderTitleSteps>Comment ouvrir un compte Klark ?</HeaderTitleSteps>
         <Container>
           <Row gutter={16}>
             <Col md={{ span: 8 }} sm={{ span: 24 }} xs={{ span: 24 }}>
@@ -27,7 +24,7 @@ const Steps = () => {
                     src={SignIn}
                     alt="Inscription"
                     style={{
-                      width: "70%",
+                      width: "100%",
                       margin: "40px 0",
                     }}
                   />
@@ -50,7 +47,7 @@ const Steps = () => {
                     src={Sms}
                     alt="SMS"
                     style={{
-                      width: "70%",
+                      width: "100%",
                       margin: "40px 0",
                     }}
                   />
@@ -71,7 +68,7 @@ const Steps = () => {
                     src={CreditCard}
                     alt="Card"
                     style={{
-                      width: "70%",
+                      width: "100%",
                       margin: "40px 0",
                     }}
                   />
